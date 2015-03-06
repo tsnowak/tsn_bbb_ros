@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ubuntu/ros_workspace/tsn_senior_project/catkin/devel/setup.sh
