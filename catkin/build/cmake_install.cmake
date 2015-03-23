@@ -125,6 +125,7 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/gtest/cmake_install.cmake")
+  INCLUDE("/home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/tsn_imu_base/tsn_mpu6050/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

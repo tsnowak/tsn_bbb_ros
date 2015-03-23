@@ -2,5 +2,14 @@
 /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles/doxygen.dir
 /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/gtest/CMakeFiles/gtest.dir
 /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/gtest/CMakeFiles/gtest_main.dir
+/home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir
+/home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir
+/home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir
+/home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+/home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+/home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
 /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles/run_tests.dir
+/home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir
+/home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir
+/home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir
 /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles/tests.dir
