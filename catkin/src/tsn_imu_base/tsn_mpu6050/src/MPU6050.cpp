@@ -3137,3 +3137,25 @@ void MPU6050::setDMPConfig2(uint8_t config) {
     I2Cdev::writeByte(devAddr, MPU6050_RA_DMP_CFG_2, config);
 }
 */
+
+double * getScaledaccgyro_timestamped(double *AccGyro){
+    int16_t ax, ay, az,gx, gy, gz;
+
+    getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
+
+    AccGyro[0]=IMUtimeStamper.GetTime_from_T0sec(); //time stamp the measurement
+
+    AccGyro[1]=(double)((ax+32767)*2*lima)/65534-lima;  //acc
+    AccGyro[2]=(double)((ay+32767)*2*lima)/65534-lima;
+    AccGyro[3]=(double)((az+32767)*2*lima)/65534-lima;
+
+    AccGyro[4]=(double)((gx+32767)*2*limg)/65534-limg; //gyro
+    AccGyro[5]=(double)((gy+32767)*2*limg)/65534-limg;
+    AccGyro[6]=(double)((gz+32767)*2*limg)/65534-limg;
+
+    AccGyro[4]=AccGyro[4]*3.1415926/180;   //change to rad/s
+    AccGyro[5]=AccGyro[5]*3.1415926/180;
+    AccGyro[6]=AccGyro[6]*3.1415926/180;
+
+    return AccGyro;
+}

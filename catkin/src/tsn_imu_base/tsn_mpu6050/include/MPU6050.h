@@ -996,30 +996,11 @@ class MPU6050 {
         #endif
 */
 
+double * getScaledaccgyro_timestamped(double *AccGyro);
+
 //in the array:  [timestamp, ax,ay,az,gx,gy,gz]. convert int16 values to real acc and gyro values
 // using the range limits
-//also the bias are removed from the calculated values
-double * getScaledaccgyro_timestamped(double *AccGyro){
-	int16_t ax, ay, az,gx, gy, gz;
-
-	getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
-
-	AccGyro[0]=IMUtimeStamper.GetTime_from_T0sec(); //time stamp the measurement
-
-	AccGyro[1]=(double)((ax+32767)*2*lima)/65534-lima;  //acc
-	AccGyro[2]=(double)((ay+32767)*2*lima)/65534-lima;
-	AccGyro[3]=(double)((az+32767)*2*lima)/65534-lima;
-
-	AccGyro[4]=(double)((gx+32767)*2*limg)/65534-limg; //gyro
-	AccGyro[5]=(double)((gy+32767)*2*limg)/65534-limg;
-	AccGyro[6]=(double)((gz+32767)*2*limg)/65534-limg;
-
-	AccGyro[4]=AccGyro[4]*3.1415926/180;   //change to rad/s
-	AccGyro[5]=AccGyro[5]*3.1415926/180;
-	AccGyro[6]=AccGyro[6]*3.1415926/180;
-
-	return AccGyro;
-}
+//also the bias are removed from the calculated value
 
 
     private:
