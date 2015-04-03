@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(tsn_mpu6050)
 
-find_package(catkin_simple REQUIRED)
+#find_package(catkin_simple REQUIRED)
 
-catkin_simple()
+#catkin_simple()
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
@@ -19,14 +19,14 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 #Libraries
-cs_add_libraries(MPU6050 src/MPU6050.cpp)
-cs_add_libraries(I2Cdev src/I2Cdev.cpp)
+add_libraries(MPU6050 src/MPU6050.cpp)
+add_libraries(I2Cdev src/I2Cdev.cpp)
 
 #Executables
-cs_add_executable(ros_mpu6050 src/ros_mpu6050.cpp)
+add_executable(ros_mpu6050 src/ros_mpu6050.cpp)
 
-cs_install()
-cs_export()
+#cs_install()
+#cs_export()
 
 
 
