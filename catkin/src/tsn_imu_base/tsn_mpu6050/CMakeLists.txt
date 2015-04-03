@@ -5,6 +5,13 @@ find_package(catkin_simple REQUIRED)
 
 catkin_simple()
 
+## Specify additional locations of header files
+## Your package locations should be listed before other locations
+# include_directories(include)
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+)
+
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
@@ -113,12 +120,7 @@ catkin_package(
 ## Build ##
 ###########
 
-## Specify additional locations of header files
-## Your package locations should be listed before other locations
-# include_directories(include)
-include_directories(
-  ${catkin_INCLUDE_DIRS}
-)
+
 
 ## Declare a cpp library
 # add_library(tsn_mpu6050
