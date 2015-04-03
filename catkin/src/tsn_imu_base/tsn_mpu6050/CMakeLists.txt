@@ -1,16 +1,40 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(tsn_mpu6050)
 
-## Find catkin macros and libraries
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find other catkin packages
+find_package(catkin_simple REQUIRED)
+
+catkin_simple()
+
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
+  sensor_msgs
 )
 
+#Libraries
+cs_add_libraries(MPU6050 src/MPU6050.cpp)
+cs_add_libraries(I2Cdev src/I2Cdev.cpp)
+
+#Executables
+cs_add_executable(ros_mpu6050 src/ros_mpu6050.cpp)
+
+cs_install()
+cs_export()
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
+##find_package(catkin_simple REQUIRED)
 
 
 ## Uncomment this if the package has a setup.py. This macro ensures
