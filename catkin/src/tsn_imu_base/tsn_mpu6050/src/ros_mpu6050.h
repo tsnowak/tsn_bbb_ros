@@ -64,7 +64,7 @@ private:
 
 	ros::Publisher imu_publisher;
 
-	MPU6050::MPU6050 imu;
+	MPU6050* imu = new MPU6050();
 
 	sensor_msgs::Imu data_out;
 
