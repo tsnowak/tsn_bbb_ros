@@ -34,7 +34,7 @@ ros_mpu6050::ros_mpu6050(ros::NodeHandle* nodehandle):nh_(*nodehandle)
     // imu.MPU6050(0);
 
     ROS_INFO("Initializing MPU6050...");
-    imu.initialize();
+    imu->initialize();
 
     ROS_INFO("Done Initializiing!"); 
 
@@ -50,7 +50,7 @@ void ros_mpu6050::initializePublishers()
 void ros_mpu6050::fetchValues()
 {
 	double temp_data;
-	data = imu.getScaledaccgyro_timestamped(&temp_data);
+	data = imu->getScaledaccgyro_timestamped(&temp_data);
 
 	data_out.header.stamp = ros::Time::now();
 	data_out.angular_velocity.x = data[1];
