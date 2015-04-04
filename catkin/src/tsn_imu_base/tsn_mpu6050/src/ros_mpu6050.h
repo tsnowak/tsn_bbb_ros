@@ -30,7 +30,7 @@
 #include <std_msgs/Float32MultiArray.h>
 
 // message type used to communicate IMU data
-#include <sensor_msgs/Imu>
+#include <sensor_msgs/Imu.h>
 
 // various geometry messages that may be of use to us
 #include <geometry_msgs/Quaternion>
