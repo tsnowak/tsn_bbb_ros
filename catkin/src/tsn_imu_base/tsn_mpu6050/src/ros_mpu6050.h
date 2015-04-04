@@ -64,8 +64,6 @@ private:
 
 	ros::Publisher imu_publisher;
 
-	MPU6050 imu;
-
 	sensor_msgs::Imu data_out;
 
 	double *data;
