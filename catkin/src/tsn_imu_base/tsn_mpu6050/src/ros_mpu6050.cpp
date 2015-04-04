@@ -77,7 +77,8 @@ int main(int argc, char** argv)
 
     ROS_INFO:("Starting Data Recording From MPU6050");
     while (ros::ok()) {
-        fetchValues(); // compute and publish twist commands and cmd_vel and cmd_vel_stamped
+
+        rosmpu6050.fetchValues(); // compute and publish twist commands and cmd_vel and cmd_vel_stamped
 
         ros::spinOnce();
         sleep_timer.sleep();
