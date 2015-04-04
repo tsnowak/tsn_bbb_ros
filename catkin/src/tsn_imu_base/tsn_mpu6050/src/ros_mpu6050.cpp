@@ -23,16 +23,16 @@ ros_mpu6050::ros_mpu6050(ros::NodeHandle* nodehandle):nh_(*nodehandle)
 
 
     // Remove and set to default or desired if cin/cout is slowing you down
-    std::cout<<"Starting MPU6050..."<<std::endl;
+    /*std::cout<<"Starting MPU6050..."<<std::endl;
          if (true) {
             std::cout<<"Confirm:  Enter IMU Address: ";
             std::cin>>imuid;   
         }
-
+    */
     ROS_INFO("Starting MPU6050");
     // Alternative hard coded method of inputting IMU Address
     // imu.MPU6050(0);
-    imu.MPU6050(imuid);
+    imu.MPU6050();
 
     ROS_INFO("Initializing MPU6050...");
     imu.initialize();
