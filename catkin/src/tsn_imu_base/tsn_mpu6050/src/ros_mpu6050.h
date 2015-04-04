@@ -33,7 +33,7 @@
 #include <sensor_msgs/Imu.h>
 
 // various geometry messages that may be of use to us
-#include <geometry_msgs/Quaternion>
+/*#include <geometry_msgs/Quaternion>
 #include <geometry_msgs/Vector3>
 #include <geometry_msgs/Twist.h>
 #include <geometry_msgs/TwistStamped.h>
@@ -48,7 +48,7 @@
 #include <Eigen/Dense>
 #include <Eigen/Core>
 #include <Eigen/LU>
-
+*/
 const double UPDATE_RATE = 50.0; // desired publication rate of IMU data
 
 class ros_mpu6050
