@@ -55,7 +55,8 @@ class ros_mpu6050
 {
 public:
 	ros_mpu6050(ros::NodeHandle* nodehandle); // our main function needs to initialize a ROS node handler
-
+	void initializePublishers();
+	void fetchValues();
 
 
 private:
@@ -65,7 +66,7 @@ private:
 
 	MPU6050 imu;
 
-	sensor_msgs data_out;
+	sensor_msgs::Imu data_out;
 
 	double *data;
 
