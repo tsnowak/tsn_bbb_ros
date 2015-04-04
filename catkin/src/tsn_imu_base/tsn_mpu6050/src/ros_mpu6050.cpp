@@ -32,7 +32,6 @@ ros_mpu6050::ros_mpu6050(ros::NodeHandle* nodehandle):nh_(*nodehandle)
     ROS_INFO("Starting MPU6050");
     // Alternative hard coded method of inputting IMU Address
     // imu.MPU6050(0);
-    MPU6050 imu();
 
     ROS_INFO("Initializing MPU6050...");
     imu.initialize();
