@@ -45,7 +45,7 @@ ros_mpu6050::ros_mpu6050(ros::NodeHandle* nodehandle):nh_(*nodehandle)
 void ros_mpu6050::initializePublishers()
 {
     ROS_INFO("Initializing Publishers: accls_publisher");
-    accls_publisher = nh_.advertise<sensor_msgs::Imu>("mpu_6050", 1, true); // publish IMU data in package sensor_msgs::Imu
+    imu_publisher = nh_.advertise<sensor_msgs::Imu>("mpu_6050", 1, true); // publish IMU data in package sensor_msgs::Imu
 }
 
 void ros_mpu6050::fetchValues()
@@ -53,7 +53,7 @@ void ros_mpu6050::fetchValues()
 	double temp_data;
 	data = imu.getScaledaccgyro_timestamped(&temp_data);
 
-	data_out.header = ros::Time::now();
+	data_out.header.stamp = ros::Time::now();
 	data_out.angular_velocity.x = data[1];
 	data_out.angular_velocity.y = data[2];
 	data_out.angular_velocity.z = data[3];
