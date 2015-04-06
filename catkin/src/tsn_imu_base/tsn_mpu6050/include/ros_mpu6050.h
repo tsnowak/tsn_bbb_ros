@@ -67,7 +67,7 @@ private:
 
 	sensor_msgs::Imu data_out;
 
-	double ax, ay, az, gx, gy, gz;
+	int16_t ax, ay, az, gx, gy, gz;
 };
 
 #endif
