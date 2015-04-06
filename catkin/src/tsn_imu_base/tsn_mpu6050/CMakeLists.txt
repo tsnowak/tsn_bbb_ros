@@ -14,7 +14,7 @@ find_package(catkin REQUIRED
 # include_directories(include)
 include_directories(include 
   						${catkin_INCLUDE_DIRS}
-  						${tsn_mpu6050_INCLUDE_DIRS}
+  						#${tsn_mpu6050_INCLUDE_DIRS}
 )
 
 #Executables
