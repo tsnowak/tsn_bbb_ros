@@ -52,7 +52,7 @@ void ros_mpu6050::initializePublishers()
 
 void ros_mpu6050::fetchValues()
 {
-	double temp_data;
+	double temp_data [7];
 	data = imu.getScaledaccgyro_timestamped(temp_data);
 
 	data_out.header.stamp = ros::Time::now();

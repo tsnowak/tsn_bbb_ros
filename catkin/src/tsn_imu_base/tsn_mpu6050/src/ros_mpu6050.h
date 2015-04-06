@@ -59,7 +59,7 @@ public:
 	void fetchValues();
 
 	MPU6050 imu;
-	
+
 private:
 	ros::NodeHandle nh_;
 
@@ -67,7 +67,7 @@ private:
 
 	sensor_msgs::Imu data_out;
 
-	double *data;
+	double data [7];
 
 };
 
