@@ -23,8 +23,8 @@ find_package(catkin REQUIRED COMPONENTS
 # add_library(tsn_mpu6050
 #   src/${PROJECT_NAME}/tsn_mpu6050.cpp
 # )
-#add_libraries(MPU6050 src/${tsn_mpu6050}/MPU6050.cpp)
-#add_libraries(I2Cdev src/${tsn_mpu6050}/I2Cdev.cpp)
+add_library(MPU6050 src/MPU6050.cpp)
+add_library(I2Cdev src/I2Cdev.cpp)
 
 #Executables
 add_executable(ros_mpu6050 src/ros_mpu6050.cpp)
