@@ -1006,8 +1006,8 @@ double * getScaledaccgyro_timestamped(double *AccGyro);
     private:
         uint8_t devAddr;
         uint8_t buffer[14];
-        double lima,limg;  //limits of acc and gyro eg: 2g for +-2g range of acc and similarly for gyro.
-        SimpleTimer IMUtimeStamper;
+        //double lima,limg;  //limits of acc and gyro eg: 2g for +-2g range of acc and similarly for gyro.
+        //SimpleTimer IMUtimeStamper;
 };
 
 #endif /* _MPU6050_H_ */

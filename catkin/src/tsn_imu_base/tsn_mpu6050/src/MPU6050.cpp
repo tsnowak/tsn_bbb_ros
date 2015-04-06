@@ -68,11 +68,11 @@ void MPU6050::initialize() {
 
     //change the scale for gyro here
     setFullScaleGyroRange(MPU6050_GYRO_FS_1000);
-    limg=1000;//  deg/s
+    //limg=1000;//  deg/s
 
     //change the scale for acc here
     setFullScaleAccelRange(MPU6050_ACCEL_FS_2);
-    lima=2*9.8;// m/s^2
+    //lima=2*9.8;// m/s^2
 
     //set the sample rate 10 1khz for gyro. Acc is default 1khz(i think)
     setRate(7);
@@ -81,7 +81,7 @@ void MPU6050::initialize() {
 
     usleep(1000000);//sleep for 1 second to let the IMU initialize everything
 
-    IMUtimeStamper.ResetTimer(); //reset the timer to start counting from current time.
+    //IMUtimeStamper.ResetTimer(); //reset the timer to start counting from current time.
 
 }
 
@@ -3138,7 +3138,7 @@ void MPU6050::setDMPConfig2(uint8_t config) {
 }
 */
 
-double * getScaledaccgyro_timestamped(double *AccGyro){
+/*double * getScaledaccgyro_timestamped(double *AccGyro){
     int16_t ax, ay, az,gx, gy, gz;
 
     getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
@@ -3158,4 +3158,4 @@ double * getScaledaccgyro_timestamped(double *AccGyro){
     AccGyro[6]=AccGyro[6]*3.1415926/180;
 
     return AccGyro;
-}
+}*/

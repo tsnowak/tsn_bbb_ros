@@ -66,8 +66,9 @@ private:
 
 	sensor_msgs::Imu data_out;
 
-	double *data;
-
+	double ax, ay, az, gx, gy, gz;
+	double limg=1000;//  deg/s
+	double lima=2*9.8;// m/s^2
 };
 
 #endif

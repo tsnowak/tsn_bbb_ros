@@ -52,16 +52,22 @@ void ros_mpu6050::initializePublishers()
 
 void ros_mpu6050::fetchValues()
 {
-	double temp_data;
-	data = imu.getScaledaccgyro_timestamped(&temp_data);
 
-	data_out.header.stamp = ros::Time::now();
-	data_out.angular_velocity.x = data[1];
-	data_out.angular_velocity.y = data[2];
-	data_out.angular_velocity.z = data[3];
-	data_out.linear_acceleration.x = data[4];
-	data_out.linear_acceleration.y = data[5];
-	data_out.linear_acceleration.z = data[6];
+    getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
+
+    data_out.header.stamp = ros::Time::now();; //time stamp the measurement
+
+    data_out.linear_acceleration.x =(double)((ax+32767)*2*lima)/65534-lima;  //acc
+    data_out.linear_acceleration.y =(double)((ay+32767)*2*lima)/65534-lima;
+    data_out.linear_acceleration.z =(double)((az+32767)*2*lima)/65534-lima;
+
+    data_out.angular_velocity.x =(double)((gx+32767)*2*limg)/65534-limg; //gyro
+    data_out.angular_velocity.y =(double)((gy+32767)*2*limg)/65534-limg;
+    data_out.angular_velocity.z =(double)((gz+32767)*2*limg)/65534-limg;
+
+    data_out.angular_velocity.x =data_out.angular_velocity.x*3.1415926/180;   //change to rad/s
+    data_out.angular_velocity.y =data_out.angular_velocity.y*3.1415926/180;
+    data_out.angular_velocity.z =data_out.angular_velocity.z*3.1415926/180;
   
    	imu_publisher.publish(data_out);   
 }
