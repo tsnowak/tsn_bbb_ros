@@ -1,15 +1,16 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(tsn_mpu6050)
 
-#find_package(catkin_simple REQUIRED)
+find_package(catkin REQUIRED)
 
-#catkin_simple()
+#catkin_package()
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 # include_directories(include)
-include_directories(
-  ${catkin_INCLUDE_DIRS}
+include_directories(include 
+  						${catkin_INCLUDE_DIRS}
+  						${tsn_mpu6050_INCLUDE_DIRS}
 )
 
 find_package(catkin REQUIRED COMPONENTS
