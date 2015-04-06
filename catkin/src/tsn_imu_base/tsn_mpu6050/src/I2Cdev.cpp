@@ -45,7 +45,7 @@ THE SOFTWARE.
 ===============================================
 */
 
-#include "I2Cdev.h"
+#include <include/I2Cdev.h>
 #include <stdint.h>
 //#include <glib.h>
 //#include <glib/gprintf.h>
