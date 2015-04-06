@@ -996,7 +996,7 @@ class MPU6050 {
         #endif
 */
 
-double * getScaledaccgyro_timestamped(double *AccGyro);
+double getScaledaccgyro_timestamped(double AccGyro);
 
 //in the array:  [timestamp, ax,ay,az,gx,gy,gz]. convert int16 values to real acc and gyro values
 // using the range limits
