@@ -58,13 +58,12 @@ public:
 	void initializePublishers();
 	void fetchValues();
 
-
+	MPU6050 imu;
+	
 private:
 	ros::NodeHandle nh_;
 
 	ros::Publisher imu_publisher;
-
-	MPU6050* imu = new MPU6050();
 
 	sensor_msgs::Imu data_out;
 

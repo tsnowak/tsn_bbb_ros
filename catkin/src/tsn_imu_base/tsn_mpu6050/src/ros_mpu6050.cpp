@@ -23,18 +23,21 @@ ros_mpu6050::ros_mpu6050(ros::NodeHandle* nodehandle):nh_(*nodehandle)
 
 
     // Remove and set to default or desired if cin/cout is slowing you down
-    /*std::cout<<"Starting MPU6050..."<<std::endl;
+    std::cout<<"Starting MPU6050..."<<std::endl;
          if (true) {
             std::cout<<"Confirm:  Enter IMU Address: ";
             std::cin>>imuid;   
         }
-    */
+
     ROS_INFO("Starting MPU6050");
     // Alternative hard coded method of inputting IMU Address
-    // imu.MPU6050(0);
+    if (imuid > 0)
+        MPU6050 imu(imuid);
+    else
+        MPU6050 imu();
 
     ROS_INFO("Initializing MPU6050...");
-    imu->initialize();
+    imu.initialize();
 
     ROS_INFO("Done Initializiing!"); 
 
@@ -50,7 +53,7 @@ void ros_mpu6050::initializePublishers()
 void ros_mpu6050::fetchValues()
 {
 	double temp_data;
-	data = imu->getScaledaccgyro_timestamped(&temp_data);
+	data = imu.getScaledaccgyro_timestamped(&temp_data);
 
 	data_out.header.stamp = ros::Time::now();
 	data_out.angular_velocity.x = data[1];
