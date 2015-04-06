@@ -45,7 +45,7 @@ THE SOFTWARE.
 ===============================================
 */
 
-#include <include/I2Cdev.h>
+#include <tsn_mpu6050/include/I2Cdev.h>
 #include <stdint.h>
 //#include <glib.h>
 //#include <glib/gprintf.h>

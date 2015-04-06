@@ -11,7 +11,7 @@
 *  Application: Low cost gait tracking.
 */
 
-#include <include/ros_mpu6050.h>
+#include <tsn_mpu6050/include/ros_mpu6050.h>
 
 int imuid;
 
