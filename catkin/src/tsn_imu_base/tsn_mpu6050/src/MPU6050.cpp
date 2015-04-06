@@ -3138,7 +3138,7 @@ void MPU6050::setDMPConfig2(uint8_t config) {
 }
 */
 
-double getScaledaccgyro_timestamped(double AccGyro [7]){
+double * getScaledaccgyro_timestamped(double *AccGyro){
     int16_t ax, ay, az,gx, gy, gz;
 
     getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
