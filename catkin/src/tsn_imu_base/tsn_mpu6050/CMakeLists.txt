@@ -1,9 +1,13 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(tsn_mpu6050)
 
-find_package(catkin REQUIRED)
-
 #catkin_package()
+
+find_package(catkin REQUIRED
+  roscpp
+  std_msgs
+  sensor_msgs
+)
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
@@ -11,12 +15,6 @@ find_package(catkin REQUIRED)
 include_directories(include 
   						${catkin_INCLUDE_DIRS}
   						${tsn_mpu6050_INCLUDE_DIRS}
-)
-
-find_package(catkin REQUIRED COMPONENTS
-  roscpp
-  std_msgs
-  sensor_msgs
 )
 
 #Executables
@@ -30,6 +28,7 @@ add_executable(ros_mpu6050 src/ros_mpu6050.cpp)
 add_library(MPU6050 src/MPU6050.cpp)
 add_library(I2Cdev src/I2Cdev.cpp)
 
+target_link_libraries(ros_mpu6050 ${catkin_LIBRARIES})
 target_link_libraries(ros_mpu6050 MPU6050)
 target_link_libraries(ros_mpu6050 I2Cdev)
 

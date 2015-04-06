@@ -11,8 +11,8 @@
 *  Application: Low cost gait tracking.
 */
 
-#ifndef ROS_MPU6050_H_
-#define ROS_MPU6050_H_
+#ifndef _ROS_MPU6050_H_
+#define _ROS_MPU6050_H_
 
 #include "MPU6050.h"
 
@@ -20,14 +20,14 @@
 #include <math.h>
 #include <stdlib.h>
 #include <string>
-#include <vector>
+//#include <vector>
 
 #include <ros/ros.h> //ALWAYS need to include this when using ROS
 
 // standard messages that we may need; include more if necessary
-#include <std_msgs/Bool.h> 
-#include <std_msgs/Float32.h>
-#include <std_msgs/Float32MultiArray.h>
+//#include <std_msgs/Bool.h> 
+//#include <std_msgs/Float32.h>
+//#include <std_msgs/Float32MultiArray.h>
 
 // message type used to communicate IMU data
 #include <sensor_msgs/Imu.h>
@@ -70,4 +70,4 @@ private:
 	int16_t ax, ay, az, gx, gy, gz;
 };
 
-#endif
+#endif /* _ROS_MPU6050_H_ */
