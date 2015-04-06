@@ -53,7 +53,7 @@ void ros_mpu6050::initializePublishers()
 void ros_mpu6050::fetchValues()
 {
 
-    getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
+    imu.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
 
     data_out.header.stamp = ros::Time::now();; //time stamp the measurement
 

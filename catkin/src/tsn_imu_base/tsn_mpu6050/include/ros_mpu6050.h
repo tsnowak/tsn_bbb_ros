@@ -50,7 +50,8 @@
 #include <Eigen/LU>
 */
 const double UPDATE_RATE = 50.0; // desired publication rate of IMU data
-
+const double limg = 1000;//  deg/s
+const double lima = 2*9.8;// m/s^2
 class ros_mpu6050
 {
 public:
@@ -67,8 +68,6 @@ private:
 	sensor_msgs::Imu data_out;
 
 	double ax, ay, az, gx, gy, gz;
-	double limg=1000;//  deg/s
-	double lima=2*9.8;// m/s^2
 };
 
 #endif
