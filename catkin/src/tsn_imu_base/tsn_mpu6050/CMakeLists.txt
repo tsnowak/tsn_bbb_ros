@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(tsn_mpu6050)
 
-#catkin_package()
+catkin_package()
 
 find_package(catkin REQUIRED
   roscpp
