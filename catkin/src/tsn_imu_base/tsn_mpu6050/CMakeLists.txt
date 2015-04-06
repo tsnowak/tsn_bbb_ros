@@ -18,6 +18,9 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
 )
 
+#Executables
+add_executable(ros_mpu6050 src/ros_mpu6050.cpp)
+
 #Libraries
 ## Declare a cpp library
 # add_library(tsn_mpu6050
@@ -26,8 +29,8 @@ find_package(catkin REQUIRED COMPONENTS
 add_library(MPU6050 src/MPU6050.cpp)
 add_library(I2Cdev src/I2Cdev.cpp)
 
-#Executables
-add_executable(ros_mpu6050 src/ros_mpu6050.cpp)
+target_link_libraries(ros_mpu6050 MPU6050)
+target_link_libraries(ros_mpu6050 I2Cdev)
 
 #cs_install()
 #cs_export()
