@@ -49,7 +49,7 @@
 #include <Eigen/Core>
 #include <Eigen/LU>
 */
-const double UPDATE_RATE = 1000; // desired publication rate of IMU data
+const double UPDATE_RATE = 1; // desired publication rate of IMU data
 const double limg = 1000;//  deg/s
 const double lima = 2*9.8;// m/s^2
 class ros_mpu6050
