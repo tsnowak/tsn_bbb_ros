@@ -83,11 +83,11 @@ int main(int argc, char** argv)
     ros_mpu6050 rosmpu6050(&nh);  //instantiate an ExampleRosClass object and pass in pointer to nodehandle for constructor to use
     ros::Rate sleep_timer(UPDATE_RATE); //a timer for desired rate, e.g. 50Hz
 
-    ROS_INFO:("Starting Data Recording From MPU6050");
+    ROS_INFO("Starting Data Recording From MPU6050");
     while (ros::ok()) {
 
         rosmpu6050.fetchValues(); // compute and publish twist commands and cmd_vel and cmd_vel_stamped
-
+        
         ros::spinOnce();
         sleep_timer.sleep();
     }
