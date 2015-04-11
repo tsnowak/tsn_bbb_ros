@@ -60,7 +60,7 @@ THE SOFTWARE.
 #include <sys/stat.h>
 #include <fcntl.h>
 
-#define BBB_I2C_file "/dev/i2c-1"      //change yout i2c 0 or 1 for BBB
+#define BBB_I2C_file "/dev/i2c-2"      //change yout i2c 0 or 1 for BBB
 
 /** Default constructor.
  */

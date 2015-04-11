@@ -13,7 +13,7 @@
 
 #include <ros_mpu6050.h>
 
-int imuid;
+int8_t imuid;
 
 ros_mpu6050::ros_mpu6050(ros::NodeHandle* nodehandle):nh_(*nodehandle)
 { // constructor
