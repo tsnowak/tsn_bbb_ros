@@ -23,8 +23,6 @@
 I2Cdev device library code is placed under the MIT license
 Copyright (c) 2013 Jeff Rowberg
 
-Modified by Nagavenkat Adurthi for BeagelBone Black
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -45,14 +43,21 @@ THE SOFTWARE.
 ===============================================
 */
 
+/*
+===============================================
+Although Jeff Rowberg generously created the inital library, edits were made 
+so that it would work with the Beaglebone Black. A significant amount of this
+editing was made by Nagavenkat Adurthi, a Ph.D. candidate at the University of 
+Buffalo. His code can be found on his website. All other edits were made by
+myself, Theodore Nowak BSc., Case Western Reserve University. Enjoy! 
+* Insert non-liability rant from above. *
+===============================================
+*/
+
 #ifndef _I2CDEV_H_
 #define _I2CDEV_H_
 
 #include <stdint.h>
-// -----------------------------------------------------------------------------
-// I2C interface implementation setting
-// -----------------------------------------------------------------------------
-
 
 class I2Cdev {
     public:

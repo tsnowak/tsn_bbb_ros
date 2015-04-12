@@ -23,8 +23,6 @@
 I2Cdev device library code is placed under the MIT license
 Copyright (c) 2013 Jeff Rowberg
 
-Modified by Nagavenkat Adurthi for Beaglebone Black
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -45,10 +43,19 @@ THE SOFTWARE.
 ===============================================
 */
 
+/*
+===============================================
+Although Jeff Rowberg generously created the inital library, edits were made 
+so that it would work with the Beaglebone Black. A significant amount of this
+editing was made by Nagavenkat Adurthi, a Ph.D. candidate at the University of 
+Buffalo. His code can be found on his website. All other edits were made by
+myself, Theodore Nowak BSc., Case Western Reserve University. Enjoy! 
+* Insert non-liability rant from above. *
+===============================================
+*/
+
 #include <I2Cdev.h>
 #include <stdint.h>
-//#include <glib.h>
-//#include <glib/gprintf.h>
 #include <errno.h>
 #include <string.h>
 #include <stdio.h>
@@ -60,7 +67,9 @@ THE SOFTWARE.
 #include <sys/stat.h>
 #include <fcntl.h>
 
-#define BBB_I2C_file "/dev/i2c-2"      //change yout i2c 0 or 1 for BBB
+// Change this depending on what i2c connection your IMU is using
+// Check this using i2ctools (sudo i2cdetect -r 1,2, or 3)
+#define BBB_I2C_file "/dev/i2c-2"
 
 /** Default constructor.
  */
@@ -72,7 +81,8 @@ I2Cdev::I2Cdev() {
  * @param regAddr Register regAddr to read from
  * @param bitNum Bit position to read (0-7)
  * @param data Container for single bit value
- * @param timeout Optional read timeout in milliseconds (0 to disable, leave off to use default class value in I2Cdev::readTimeout)
+ * @param timeout Optional read timeout in milliseconds (0 to disable,
+ * leave off to use default class value in I2Cdev::readTimeout)
  * @return Status of read operation (true = success)
  */
 int8_t I2Cdev::readBit(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t *data) {

@@ -14,8 +14,6 @@
 I2Cdev device library code is placed under the MIT license
 Copyright (c) 2012 Jeff Rowberg
 
-Modified by Nagavenkat Adurthi for BeagelBone Black
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -33,6 +31,17 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+===============================================
+*/
+
+/*
+===============================================
+Although Jeff Rowberg generously created the inital library, edits were made 
+so that it would work with the Beaglebone Black. A significant amount of this
+editing was made by Nagavenkat Adurthi, a Ph.D. candidate at the University of 
+Buffalo. His code can be found on his website. All other edits were made by
+myself, Theodore Nowak BSc., Case Western Reserve University. Enjoy! 
+* Insert non-liability rant from above. *
 ===============================================
 */
 
@@ -66,23 +75,19 @@ MPU6050::MPU6050(uint8_t address) {
 void MPU6050::initialize() {
     setClockSource(MPU6050_CLOCK_PLL_XGYRO);
 
-    //change the scale for gyro here
+    // change gyro record range here 
     setFullScaleGyroRange(MPU6050_GYRO_FS_1000);
-    //limg=1000;//  deg/s
 
-    //change the scale for acc here
+    // change the accelerometer record range here
     setFullScaleAccelRange(MPU6050_ACCEL_FS_2);
-    //lima=2*9.8;// m/s^2
 
-    //set the sample rate 10 1khz for gyro. Acc is default 1khz(i think)
+    // Set the sample rate to 1khz for gyro. Gyro default is 8kHz (we're doing 8kHz/(7+1) = 1kHz).
+    // Acc is default 1khz
     setRate(7);
 
-    setSleepEnabled(false); // thanks to Jack Elston for pointing this one out!
+    setSleepEnabled(false);  // thanks to Jack Elston for pointing this one out!
 
-    usleep(1000000);//sleep for 1 second to let the IMU initialize everything
-
-    //IMUtimeStamper.ResetTimer(); //reset the timer to start counting from current time.
-
+    usleep(1000000);  // Sleep for 1 second to let the IMU initialize everything
 }
 
 /** Verify the I2C connection.
@@ -3137,25 +3142,3 @@ void MPU6050::setDMPConfig2(uint8_t config) {
     I2Cdev::writeByte(devAddr, MPU6050_RA_DMP_CFG_2, config);
 }
 */
-
-/*double * getScaledaccgyro_timestamped(double *AccGyro){
-    int16_t ax, ay, az,gx, gy, gz;
-
-    getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
-
-    AccGyro[0]=IMUtimeStamper.GetTime_from_T0sec(); //time stamp the measurement
-
-    AccGyro[1]=(double)((ax+32767)*2*lima)/65534-lima;  //acc
-    AccGyro[2]=(double)((ay+32767)*2*lima)/65534-lima;
-    AccGyro[3]=(double)((az+32767)*2*lima)/65534-lima;
-
-    AccGyro[4]=(double)((gx+32767)*2*limg)/65534-limg; //gyro
-    AccGyro[5]=(double)((gy+32767)*2*limg)/65534-limg;
-    AccGyro[6]=(double)((gz+32767)*2*limg)/65534-limg;
-
-    AccGyro[4]=AccGyro[4]*3.1415926/180;   //change to rad/s
-    AccGyro[5]=AccGyro[5]*3.1415926/180;
-    AccGyro[6]=AccGyro[6]*3.1415926/180;
-
-    return AccGyro;
-}*/

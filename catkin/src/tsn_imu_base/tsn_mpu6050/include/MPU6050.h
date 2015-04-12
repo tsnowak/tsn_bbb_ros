@@ -14,9 +14,6 @@
 I2Cdev device library code is placed under the MIT license
 Copyright (c) 2012 Jeff Rowberg
 
-Modified by Nagavenkat Adurthi for BeagelBone Black
-
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -37,26 +34,21 @@ THE SOFTWARE.
 ===============================================
 */
 
+/*
+===============================================
+Although Jeff Rowberg generously created the inital library, edits were made 
+so that it would work with the Beaglebone Black. A significant amount of this
+editing was made by Nagavenkat Adurthi, a Ph.D. candidate at the University of 
+Buffalo. His code can be found on his website. All other edits were made by
+myself, Theodore Nowak BSc., Case Western Reserve University. Enjoy! 
+* Insert non-liability rant from above. *
+===============================================
+*/
+
 #ifndef _MPU6050_H_
 #define _MPU6050_H_
 
 #include "I2Cdev.h"
-#include "SimpleTimer.h"  //this is timestpam the measurements. Uses local linux clock. As the time is calculated relative, the true time is not needed.
-
- //The initialise function of MPU6050 will initialize the timer.
-
-// supporting link:  http://forum.arduino.cc/index.php?&topic=143444.msg1079517#msg1079517
-// also: http://forum.arduino.cc/index.php?&topic=141571.msg1062899#msg1062899s
-//#ifndef __arm__
-//#include <avr/pgmspace.h>
-//#else
-//#define PROGMEM /* empty */
-//#define pgm_read_byte(x) (*(x))
-//#define pgm_read_word(x) (*(x))
-//#define pgm_read_float(x) (*(x))
-//#define PSTR(STR) STR
-//#endif
-
 
 #define MPU6050_ADDRESS_AD0_LOW     0x68 // address pin low (GND), default for InvenSense evaluation board
 #define MPU6050_ADDRESS_AD0_HIGH    0x69 // address pin high (VCC)
@@ -996,18 +988,9 @@ class MPU6050 {
         #endif
 */
 
-double * getScaledaccgyro_timestamped(double *AccGyro);
-
-//in the array:  [timestamp, ax,ay,az,gx,gy,gz]. convert int16 values to real acc and gyro values
-// using the range limits
-//also the bias are removed from the calculated value
-
-
     private:
         uint8_t devAddr;
         uint8_t buffer[14];
-        //double lima,limg;  //limits of acc and gyro eg: 2g for +-2g range of acc and similarly for gyro.
-        //SimpleTimer IMUtimeStamper;
 };
 
 #endif /* _MPU6050_H_ */
