@@ -1,5 +1,5 @@
 /* Implementation of MPU6050 and I2CDev cpp and h files to function using
-*  ROS Indigo on Beaglebone Black with Ubuntu ARM OS.
+*  ROS Indigo on a Beaglebone Black with Ubuntu ARM OS.
 *  Developer: Theodore Nowak BSc., Case Western Reserve University EECS Department
 *  Date of Initiation: 03/23/2015
 *
@@ -53,7 +53,7 @@ ros_mpu6050::ros_mpu6050(ros::NodeHandle* nodehandle):nh_(*nodehandle)
 // Simple function to set up all publishers (more can be added as desired)
 void ros_mpu6050::initializePublishers()
 {
-    ROS_INFO("Initializing Publishers: accls_publisher");
+    ROS_INFO("Initializing Publishers: imu_publisher");
     imu_publisher = nh_.advertise<sensor_msgs::Imu>("mpu_6050", 1, true); // publish IMU data in package sensor_msgs::Imu
 }
 

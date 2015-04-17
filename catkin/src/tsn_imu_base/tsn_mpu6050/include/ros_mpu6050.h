@@ -1,5 +1,5 @@
 /* Implementation of MPU6050 and I2CDev cpp and h files to function using
-*  ROS Indigo on Beaglebone Black with Ubuntu ARM OS.
+*  ROS Indigo on a Beaglebone Black with Ubuntu ARM OS.
 *  Developer: Theodore Nowak BSc., Case Western Reserve University EECS Department
 *  Date of Initiation: 03/23/2015
 *
@@ -28,7 +28,7 @@
 // message type used to communicate IMU data
 #include <sensor_msgs/Imu.h>
 
-const double UPDATE_RATE = 1; // desired publication rate of IMU data
+const double UPDATE_RATE = 50; // desired publication rate of IMU data
 const double limg = 1000;  // used to convert rotational accel to deg/s
 const double lima = 2*9.8;  // used to convert linear accel to m/s^2
 
