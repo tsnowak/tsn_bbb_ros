@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/ros_workspace/tsn_senior_project/catkin/src/tsn_imu_base/tsn_mpu6050/include/I2Cdev.h
+stdint.h
+-
+
+/home/ubuntu/ros_workspace/tsn_senior_project/catkin/src/tsn_imu_base/tsn_mpu6050/src/I2Cdev.cpp
+I2Cdev.h
+-
+stdint.h
+-
+errno.h
+-
+string.h
+-
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+linux/i2c-dev.h
+-
+sys/ioctl.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+

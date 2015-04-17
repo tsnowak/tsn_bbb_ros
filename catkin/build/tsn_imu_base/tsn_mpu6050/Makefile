@@ -150,130 +150,202 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/rule:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/rule
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_cpp: tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : roscpp_generate_messages_cpp
+I2Cdev: tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/rule
+.PHONY : I2Cdev
 
 # fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
+I2Cdev/fast:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/build
+.PHONY : I2Cdev/fast
 
 # Convenience name for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/rule:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/rule
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_lisp: tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : roscpp_generate_messages_lisp
+MPU6050: tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/rule
+.PHONY : MPU6050
 
 # fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
+MPU6050/fast:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/build
+.PHONY : MPU6050/fast
 
 # Convenience name for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/rule
+tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_py: tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : roscpp_generate_messages_py
+geometry_msgs_generate_messages_cpp: tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : geometry_msgs_generate_messages_cpp
 
 # fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
+geometry_msgs_generate_messages_cpp/fast:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_cpp
+geometry_msgs_generate_messages_lisp: tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : geometry_msgs_generate_messages_lisp
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+geometry_msgs_generate_messages_lisp/fast:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_lisp
+geometry_msgs_generate_messages_py: tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : geometry_msgs_generate_messages_py
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+geometry_msgs_generate_messages_py/fast:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/rule:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/rule
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_py: tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_py
+ros_mpu6050: tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/rule
+.PHONY : ros_mpu6050
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
+ros_mpu6050/fast:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/build
+.PHONY : ros_mpu6050/fast
 
 # Convenience name for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_cpp: tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : std_msgs_generate_messages_cpp
+sensor_msgs_generate_messages_cpp: tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : sensor_msgs_generate_messages_cpp
 
 # fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
+sensor_msgs_generate_messages_cpp/fast:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_lisp: tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : std_msgs_generate_messages_lisp
+sensor_msgs_generate_messages_lisp: tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : sensor_msgs_generate_messages_lisp
 
 # fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
+sensor_msgs_generate_messages_lisp/fast:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : std_msgs_generate_messages_py
+sensor_msgs_generate_messages_py: tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : sensor_msgs_generate_messages_py
 
 # fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
+sensor_msgs_generate_messages_py/fast:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+src/I2Cdev.o: src/I2Cdev.cpp.o
+.PHONY : src/I2Cdev.o
+
+# target to build an object file
+src/I2Cdev.cpp.o:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/src/I2Cdev.cpp.o
+.PHONY : src/I2Cdev.cpp.o
+
+src/I2Cdev.i: src/I2Cdev.cpp.i
+.PHONY : src/I2Cdev.i
+
+# target to preprocess a source file
+src/I2Cdev.cpp.i:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/src/I2Cdev.cpp.i
+.PHONY : src/I2Cdev.cpp.i
+
+src/I2Cdev.s: src/I2Cdev.cpp.s
+.PHONY : src/I2Cdev.s
+
+# target to generate assembly for a file
+src/I2Cdev.cpp.s:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/src/I2Cdev.cpp.s
+.PHONY : src/I2Cdev.cpp.s
+
+src/MPU6050.o: src/MPU6050.cpp.o
+.PHONY : src/MPU6050.o
+
+# target to build an object file
+src/MPU6050.cpp.o:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/src/MPU6050.cpp.o
+.PHONY : src/MPU6050.cpp.o
+
+src/MPU6050.i: src/MPU6050.cpp.i
+.PHONY : src/MPU6050.i
+
+# target to preprocess a source file
+src/MPU6050.cpp.i:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/src/MPU6050.cpp.i
+.PHONY : src/MPU6050.cpp.i
+
+src/MPU6050.s: src/MPU6050.cpp.s
+.PHONY : src/MPU6050.s
+
+# target to generate assembly for a file
+src/MPU6050.cpp.s:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/src/MPU6050.cpp.s
+.PHONY : src/MPU6050.cpp.s
+
+src/ros_mpu6050.o: src/ros_mpu6050.cpp.o
+.PHONY : src/ros_mpu6050.o
+
+# target to build an object file
+src/ros_mpu6050.cpp.o:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/src/ros_mpu6050.cpp.o
+.PHONY : src/ros_mpu6050.cpp.o
+
+src/ros_mpu6050.i: src/ros_mpu6050.cpp.i
+.PHONY : src/ros_mpu6050.i
+
+# target to preprocess a source file
+src/ros_mpu6050.cpp.i:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/src/ros_mpu6050.cpp.i
+.PHONY : src/ros_mpu6050.cpp.i
+
+src/ros_mpu6050.s: src/ros_mpu6050.cpp.s
+.PHONY : src/ros_mpu6050.s
+
+# target to generate assembly for a file
+src/ros_mpu6050.cpp.s:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/src/ros_mpu6050.cpp.s
+.PHONY : src/ros_mpu6050.cpp.s
 
 # Help Target
 help:
@@ -281,22 +353,31 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... I2Cdev"
+	@echo "... MPU6050"
 	@echo "... edit_cache"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_py"
+	@echo "... ros_mpu6050"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... test"
+	@echo "... src/I2Cdev.o"
+	@echo "... src/I2Cdev.i"
+	@echo "... src/I2Cdev.s"
+	@echo "... src/MPU6050.o"
+	@echo "... src/MPU6050.i"
+	@echo "... src/MPU6050.s"
+	@echo "... src/ros_mpu6050.o"
+	@echo "... src/ros_mpu6050.i"
+	@echo "... src/ros_mpu6050.s"
 .PHONY : help
 
 

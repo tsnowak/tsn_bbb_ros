@@ -199,7 +199,7 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles  3
 	@echo "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
@@ -230,7 +230,7 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles  4
 	@echo "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
@@ -255,22 +255,326 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory tsn_imu_base/tsn_ir_gait_sensor
+
+# Convenience name for "all" pass in the directory.
+tsn_imu_base/tsn_ir_gait_sensor/all:
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/all
+
+# Convenience name for "clean" pass in the directory.
+tsn_imu_base/tsn_ir_gait_sensor/clean: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+tsn_imu_base/tsn_ir_gait_sensor/clean: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+tsn_imu_base/tsn_ir_gait_sensor/clean: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/clean
+tsn_imu_base/tsn_ir_gait_sensor/clean: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+tsn_imu_base/tsn_ir_gait_sensor/clean: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+tsn_imu_base/tsn_ir_gait_sensor/clean: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+tsn_imu_base/tsn_ir_gait_sensor/clean: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+tsn_imu_base/tsn_ir_gait_sensor/clean: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+tsn_imu_base/tsn_ir_gait_sensor/clean: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/clean
+
+# Convenience name for "preinstall" pass in the directory.
+tsn_imu_base/tsn_ir_gait_sensor/preinstall:
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/preinstall
+
+#=============================================================================
+# Target rules for target tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir
+
+# All Build rule for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 
+	@echo "Built target roscpp_generate_messages_cpp"
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : roscpp_generate_messages_cpp
+
+# clean rule for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir
+
+# All Build rule for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 
+	@echo "Built target roscpp_generate_messages_lisp"
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_lisp: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : roscpp_generate_messages_lisp
+
+# clean rule for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir
+
+# All Build rule for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/all:
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/depend
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 
+	@echo "Built target roscpp_generate_messages_py"
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : roscpp_generate_messages_py
+
+# clean rule for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/clean:
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/clean
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 
+	@echo "Built target rosgraph_msgs_generate_messages_cpp"
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# clean rule for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 
+	@echo "Built target rosgraph_msgs_generate_messages_lisp"
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_lisp: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# clean rule for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 
+	@echo "Built target rosgraph_msgs_generate_messages_py"
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_py: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# clean rule for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 
+	@echo "Built target std_msgs_generate_messages_cpp"
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_cpp: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : std_msgs_generate_messages_cpp
+
+# clean rule for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 
+	@echo "Built target std_msgs_generate_messages_lisp"
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : std_msgs_generate_messages_lisp
+
+# clean rule for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 
+	@echo "Built target std_msgs_generate_messages_py"
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_py: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : std_msgs_generate_messages_py
+
+# clean rule for target.
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory tsn_imu_base/tsn_mpu6050
 
 # Convenience name for "all" pass in the directory.
-tsn_imu_base/tsn_mpu6050/all:
+tsn_imu_base/tsn_mpu6050/all: tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/all
+tsn_imu_base/tsn_mpu6050/all: tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/all
+tsn_imu_base/tsn_mpu6050/all: tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/all
 .PHONY : tsn_imu_base/tsn_mpu6050/all
 
 # Convenience name for "clean" pass in the directory.
-tsn_imu_base/tsn_mpu6050/clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-tsn_imu_base/tsn_mpu6050/clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-tsn_imu_base/tsn_mpu6050/clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/clean
-tsn_imu_base/tsn_mpu6050/clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-tsn_imu_base/tsn_mpu6050/clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-tsn_imu_base/tsn_mpu6050/clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-tsn_imu_base/tsn_mpu6050/clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-tsn_imu_base/tsn_mpu6050/clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-tsn_imu_base/tsn_mpu6050/clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+tsn_imu_base/tsn_mpu6050/clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/clean
+tsn_imu_base/tsn_mpu6050/clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/clean
+tsn_imu_base/tsn_mpu6050/clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+tsn_imu_base/tsn_mpu6050/clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+tsn_imu_base/tsn_mpu6050/clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+tsn_imu_base/tsn_mpu6050/clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/clean
+tsn_imu_base/tsn_mpu6050/clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+tsn_imu_base/tsn_mpu6050/clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+tsn_imu_base/tsn_mpu6050/clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 .PHONY : tsn_imu_base/tsn_mpu6050/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -278,283 +582,311 @@ tsn_imu_base/tsn_mpu6050/preinstall:
 .PHONY : tsn_imu_base/tsn_mpu6050/preinstall
 
 #=============================================================================
-# Target rules for target tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir
+# Target rules for target tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir
 
 # All Build rule for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 
-	@echo "Built target roscpp_generate_messages_cpp"
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/all:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/depend
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles  1
+	@echo "Built target I2Cdev"
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/all
+
+# Include target in all.
+all: tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/all
+.PHONY : all
 
 # Build rule for subdir invocation for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
+tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_cpp: tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : roscpp_generate_messages_cpp
+I2Cdev: tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/rule
+.PHONY : I2Cdev
 
 # clean rule for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/clean:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/clean
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/clean
 
 # clean rule for target.
-clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir
+# Target rules for target tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir
 
 # All Build rule for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 
-	@echo "Built target roscpp_generate_messages_lisp"
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/all:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/depend
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles  2
+	@echo "Built target MPU6050"
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/all
+
+# Include target in all.
+all: tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/all
+.PHONY : all
 
 # Build rule for subdir invocation for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
+tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_lisp: tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : roscpp_generate_messages_lisp
+MPU6050: tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/rule
+.PHONY : MPU6050
 
 # clean rule for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/clean:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/clean
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/clean
 
 # clean rule for target.
-clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir
+# Target rules for target tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/all:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/depend
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/build
+tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 
-	@echo "Built target roscpp_generate_messages_py"
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/all
+	@echo "Built target geometry_msgs_generate_messages_cpp"
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_py: tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : roscpp_generate_messages_py
+geometry_msgs_generate_messages_cpp: tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : geometry_msgs_generate_messages_cpp
 
 # clean rule for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/clean:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/clean
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/clean
+tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/clean
+clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+# Target rules for target tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 
-	@echo "Built target rosgraph_msgs_generate_messages_cpp"
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+	@echo "Built target geometry_msgs_generate_messages_lisp"
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_cpp
+geometry_msgs_generate_messages_lisp: tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : geometry_msgs_generate_messages_lisp
 
 # clean rule for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+# Target rules for target tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 
-	@echo "Built target rosgraph_msgs_generate_messages_lisp"
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+	@echo "Built target geometry_msgs_generate_messages_py"
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_lisp
+geometry_msgs_generate_messages_py: tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : geometry_msgs_generate_messages_py
 
 # clean rule for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+# Target rules for target tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir
 
 # All Build rule for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 
-	@echo "Built target rosgraph_msgs_generate_messages_py"
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/all: tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/all
+tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/all: tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/all
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/depend
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles  5
+	@echo "Built target ros_mpu6050"
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/all
+
+# Include target in all.
+all: tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/all
+.PHONY : all
 
 # Build rule for subdir invocation for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_py: tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_py
+ros_mpu6050: tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/rule
+.PHONY : ros_mpu6050
 
 # clean rule for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/clean:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/clean
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/clean
 
 # clean rule for target.
-clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir
+# Target rules for target tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 
-	@echo "Built target std_msgs_generate_messages_cpp"
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	@echo "Built target sensor_msgs_generate_messages_cpp"
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_cpp: tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : std_msgs_generate_messages_cpp
+sensor_msgs_generate_messages_cpp: tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : sensor_msgs_generate_messages_cpp
 
 # clean rule for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir
+# Target rules for target tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 
-	@echo "Built target std_msgs_generate_messages_lisp"
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	@echo "Built target sensor_msgs_generate_messages_lisp"
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_lisp: tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : std_msgs_generate_messages_lisp
+sensor_msgs_generate_messages_lisp: tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : sensor_msgs_generate_messages_lisp
 
 # clean rule for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir
+# Target rules for target tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/build
+tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 
-	@echo "Built target std_msgs_generate_messages_py"
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	@echo "Built target sensor_msgs_generate_messages_py"
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/CMakeFiles 0
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : std_msgs_generate_messages_py
+sensor_msgs_generate_messages_py: tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : sensor_msgs_generate_messages_py
 
 # clean rule for target.
-tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+.PHONY : tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+clean: tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory tsn_imu_base/tsn_piezo_gait_sensor
+
+# Convenience name for "all" pass in the directory.
+tsn_imu_base/tsn_piezo_gait_sensor/all:
+.PHONY : tsn_imu_base/tsn_piezo_gait_sensor/all
+
+# Convenience name for "clean" pass in the directory.
+tsn_imu_base/tsn_piezo_gait_sensor/clean:
+.PHONY : tsn_imu_base/tsn_piezo_gait_sensor/clean
+
+# Convenience name for "preinstall" pass in the directory.
+tsn_imu_base/tsn_piezo_gait_sensor/preinstall:
+.PHONY : tsn_imu_base/tsn_piezo_gait_sensor/preinstall
 
 #=============================================================================
 # Special targets to cleanup operation of make.

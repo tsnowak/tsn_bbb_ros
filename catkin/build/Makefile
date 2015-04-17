@@ -237,7 +237,7 @@ roscpp_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
@@ -250,7 +250,7 @@ roscpp_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
@@ -263,7 +263,7 @@ roscpp_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/roscpp_generate_messages_py.dir/build
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
@@ -276,7 +276,7 @@ rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -289,7 +289,7 @@ rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -302,7 +302,7 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -315,7 +315,7 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -328,7 +328,7 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -341,8 +341,125 @@ std_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named I2Cdev
+
+# Build rule for target.
+I2Cdev: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 I2Cdev
+.PHONY : I2Cdev
+
+# fast build rule for target.
+I2Cdev/fast:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/build
+.PHONY : I2Cdev/fast
+
+#=============================================================================
+# Target rules for targets named MPU6050
+
+# Build rule for target.
+MPU6050: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MPU6050
+.PHONY : MPU6050
+
+# fast build rule for target.
+MPU6050/fast:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/build
+.PHONY : MPU6050/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_cpp
+
+# Build rule for target.
+geometry_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_cpp
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_lisp
+
+# Build rule for target.
+geometry_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_py
+
+# Build rule for target.
+geometry_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_py
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named ros_mpu6050
+
+# Build rule for target.
+ros_mpu6050: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ros_mpu6050
+.PHONY : ros_mpu6050
+
+# fast build rule for target.
+ros_mpu6050/fast:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/build
+.PHONY : ros_mpu6050/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_cpp
+
+# Build rule for target.
+sensor_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_lisp
+
+# Build rule for target.
+sensor_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_py
+
+# Build rule for target.
+sensor_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	$(MAKE) -f tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_mpu6050/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
 
 # Help Target
 help:
@@ -372,6 +489,15 @@ help:
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... I2Cdev"
+	@echo "... MPU6050"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... ros_mpu6050"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... sensor_msgs_generate_messages_py"
 .PHONY : help
 
 

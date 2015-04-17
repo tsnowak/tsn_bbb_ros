@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "tsn_piezo_gait_sensor")
+set(tsn_piezo_gait_sensor_MAINTAINER "ubuntu <ubuntu@todo.todo>")
+set(tsn_piezo_gait_sensor_DEPRECATED "")
+set(tsn_piezo_gait_sensor_VERSION "0.0.0")
+set(tsn_piezo_gait_sensor_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
+set(tsn_piezo_gait_sensor_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
+set(tsn_piezo_gait_sensor_BUILDTOOL_DEPENDS "catkin")
