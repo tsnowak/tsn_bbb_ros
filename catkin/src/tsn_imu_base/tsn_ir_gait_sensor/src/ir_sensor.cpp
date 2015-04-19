@@ -70,4 +70,5 @@ int main (int argc, char** argv)
 		ros::spinOnce();
 		sleep_timer.sleep();
 	}
+	return 0;
 }

@@ -19,7 +19,7 @@ analog_inputs::analog_inputs()  {
 bool analog_inputs::verifyADCPin(unsigned int pin)  {
 
 	int file, leftover;
-	char buf[40];
+	char buf[100];
 
 	leftover = snprintf(buf, sizeof(buf), "sys/bus/iio/devices/iio:device0/in_voltage%d_raw", pin);
 
@@ -30,7 +30,7 @@ bool analog_inputs::verifyADCPin(unsigned int pin)  {
 		return false;
 	}
 	else  {
-		printf("Successfully conencted to bus.\n");
+		printf("Successfully connected to bus.\n");
 		return true;
 	}
 
@@ -40,7 +40,7 @@ bool analog_inputs::verifyADCPin(unsigned int pin)  {
 int analog_inputs::adcRead(unsigned int pin)
 {
 	int file, leftover;
-	char buf[40];
+	char buf[100];
 	char val[3];
 
 	leftover = snprintf(buf, sizeof(buf), "sys/bus/iio/devices/iio:device0/in_voltage%d_raw", pin);
