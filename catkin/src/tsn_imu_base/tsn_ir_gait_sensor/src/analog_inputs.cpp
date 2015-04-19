@@ -24,7 +24,7 @@ bool analog_inputs::verifyADCPin(unsigned int pin)  {
 	leftover = snprintf(buf, sizeof(buf), "sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin);
 
 	printf("Leftover: %d \n", leftover);
-	printf("Buf: %c \n", buf);
+	printf("Buf: %s \n", buf);
 
 
 	file = open(buf, O_RDONLY);
