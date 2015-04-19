@@ -66,7 +66,6 @@ int main (int argc, char** argv)
 
 	while (ros::ok())
 	{
-
 		fetchValues();
 		ros::spinOnce();
 		sleep_timer.sleep();
