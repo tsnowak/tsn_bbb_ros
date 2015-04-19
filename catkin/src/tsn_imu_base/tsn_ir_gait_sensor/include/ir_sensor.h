@@ -16,6 +16,7 @@
 // ALWAYS need to include this when using ROS
 #include <ros/ros.h> 
 
+#include <std_msgs/Float32.h>
 // some generically useful stuff to include...
 #include <math.h>
 #include <stdlib.h>
