@@ -3,10 +3,9 @@
 *  Developer: Theodore Nowak BSc., Case Western Reserve University EECS Department
 *  Date of Initiation: 03/23/2015
 *
-*  Functionality: Output sensor_msgs imu.msg containing x,y,z linear acceleration,
-*  and x,y,z angular acceleration. Possibly include orientation and methodology for
-*  adequate zero update (ZUPDT) bias reset or other clever approach to removing bias
-*  offset problem commonly associated with low cost IMUs.
+*  Functionality: Output std_msgs::Float32 containing analog input voltage from
+*  desired pin. In future, attempt to make custom message type to output with this
+*  value.
 *
 *  Application: Low cost gait tracking.
 */
@@ -35,6 +34,7 @@ private:
 	ros::NodeHandle nh_;
 	ros::Publisher ir_sensor_publisher;
 	std_msgs::Float32 data_out;  // variable name for our std_msgs::Float32 output
+	int raw_data;
 };
 
 #endif /* _IR_SENSOR_H_ */

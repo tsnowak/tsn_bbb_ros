@@ -59,6 +59,10 @@ myself, Theodore Nowak BSc., Case Western Reserve University. Enjoy!
 
 #include <stdint.h>
 
+// Change this depending on what i2c connection your IMU is using
+// Check this using i2ctools (sudo i2cdetect -r 1,2, or 3)
+#define BBB_I2C_file "/dev/i2c-1"
+
 class I2Cdev {
     public:
         I2Cdev();
