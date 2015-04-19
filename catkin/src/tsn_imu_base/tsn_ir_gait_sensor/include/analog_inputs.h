@@ -39,14 +39,9 @@ class analog_inputs  {
 	public:
 
 		analog_inputs();
-		
+
 		static bool verifyADCPin(unsigned int pin);
 		static int adcRead(unsigned int pin);
-
-	private:
-		int file, leftover;
-		char buf[3];
-		char val[3];
 };
 
 #endif /* _ANALOG_INPUTS_H_ */
