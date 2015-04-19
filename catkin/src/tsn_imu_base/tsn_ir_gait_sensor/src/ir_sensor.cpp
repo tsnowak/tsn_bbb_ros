@@ -30,13 +30,15 @@ ir_sensor::ir_sensor(ros::NodeHandle* nodehandle):nh_(*nodehandle)
     ROS_INFO("Initialzing IR Sensor...");
 
     bool error = true;
+    int count = 0;
     // ensure that our file exists and is working
-    while (error)  {
+    while (error && count <= 5)  {
     	if (analog_inputs::verifyADCPin(pin))
     		error = false;
     	else 
     		ROS_ERROR("AIN%d File does not exist!", pin);
     		ros::Duration(0.5).sleep();
+    		count ++;
     }
     
 
