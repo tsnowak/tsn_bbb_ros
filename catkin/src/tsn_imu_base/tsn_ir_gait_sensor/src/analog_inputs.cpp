@@ -40,7 +40,7 @@ bool analog_inputs::verifyADCPin(unsigned int pin)  {
 int analog_inputs::adcRead(unsigned int pin)
 {
 	int file, leftover;
-	char buf[3];
+	char buf[40];
 	char val[3];
 
 	leftover = snprintf(buf, sizeof(buf), "sys/bus/iio/devices/iio:device0/in_voltage%d_raw", pin);
