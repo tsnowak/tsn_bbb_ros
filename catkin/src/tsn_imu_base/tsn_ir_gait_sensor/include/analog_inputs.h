@@ -42,11 +42,6 @@ class analog_inputs  {
 		int adcRead(unsigned int pin);
 
 	private:
-
-		void assignFile(unsigned int pin);
-
-		std::string INDEX_FILE;
-		const char INDEX_VALUE;
 		int file, num;
 		char buf[12];
 		char val[3];

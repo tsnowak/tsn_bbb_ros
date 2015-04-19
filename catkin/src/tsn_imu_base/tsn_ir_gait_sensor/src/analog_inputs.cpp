@@ -15,16 +15,10 @@
 analog_inputs::analog_inputs()  {
 }
 
-void analog_inputs::assignFile(unsigned int pin)  {
-	INDEX_FILE = "sys/bus/iio/devices/iio:device0/in_voltage%d_raw", pin;
-	INDEX_VALUE = *INDEX_FILE;
-}
-
 // Check that we are getting values from the adc
 bool analog_inputs::verifyADCPin(unsigned int pin)  {
-	assignFile(pin);
 
-	num = snprintf(buf, sizeof(buf), INDEX_VALUE);
+	num = snprintf(buf, sizeof(buf), "sys/bus/iio/devices/iio:device0/in_voltage%d_raw", pin);
 
 	file = open(buf, O_RDONLY);
 
@@ -42,11 +36,10 @@ bool analog_inputs::verifyADCPin(unsigned int pin)  {
 // Read the current ADC value from input pin
 int analog_inputs::adcRead(unsigned int pin)
 {
-	assignFile(pin);
 	num = 0;
 	file = 0;
 
-	num = snprintf(buf, sizeof(buf), INDEX_VALUE);
+	num = snprintf(buf, sizeof(buf), "sys/bus/iio/devices/iio:device0/in_voltage%d_raw", pin);
 
 	file = open(buf, O_RDONLY);
 
