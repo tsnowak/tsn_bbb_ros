@@ -15,7 +15,7 @@
 
 // ALWAYS need to include this when using ROS
 #include <ros/ros.h> 
-
+#include "analog_inputs.h"
 // some generically useful stuff to include...
 #include <math.h>
 #include <stdlib.h>
@@ -28,7 +28,7 @@ const double UPDATE_RATE = 50; // desired publication rate of ir sensor data
 class ir_sensor
 {
 public:
-	
+
 	ir_sensor(ros::NodeHandle* nodehandle); // our main function needs to initialize a ROS node handler
 	void initializePublishers();
 	void fetchValues();
