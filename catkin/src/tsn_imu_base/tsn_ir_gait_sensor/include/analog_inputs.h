@@ -14,7 +14,7 @@
 #define _ANALOG_INPUTS_H_
  
 #include <stdint.h>
-#include <string.h>
+#include <string>
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>

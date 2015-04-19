@@ -21,7 +21,7 @@ void analog_inputs::assignFile(unsigned int pin)  {
 
 // Check that we are getting values from the adc
 bool analog_inputs::verifyADCPin(unsigned int pin)  {
-	assign_File(pin);
+	assignFile(pin);
 
 	num = snprintf(buf, sizeof(buf), INDEX_FILE);
 
@@ -41,7 +41,7 @@ bool analog_inputs::verifyADCPin(unsigned int pin)  {
 // Read the current ADC value from input pin
 int analog_inputs::adcRead(unsigned int pin)
 {
-	assign_File(pin);
+	assignFile(pin);
 	num = 0;
 	file = 0;
 
