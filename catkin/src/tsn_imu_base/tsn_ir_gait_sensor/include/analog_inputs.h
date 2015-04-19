@@ -42,8 +42,8 @@ class analog_inputs  {
 		int adcRead(unsigned int pin);
 
 	private:
-		int file, num;
-		char buf[12];
+		int file, leftover;
+		char buf[3];
 		char val[3];
 };
 
