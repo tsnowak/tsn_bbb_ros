@@ -32,7 +32,7 @@ bool analog_inputs::verifyADCPin(unsigned int pin)  {
 		return false;
 	}
 	else  {
-		printf("Successfully conencted to bus.\n")
+		printf("Successfully conencted to bus.\n");
 		return true;
 	}
 
@@ -50,11 +50,11 @@ int analog_inputs::adcRead(unsigned int pin)
 	file = open(buf, O_RDONLY);
 
 	if (file < 0)  {
-		ROS_INFO("Failed to open the bus.\n");
+		printf("Failed to open the bus.\n");
 	}
 
 	read(file, &val, 3);
 	close(file);
 
-	return std::atoi(&val);
+	return atoi(&val);
 }

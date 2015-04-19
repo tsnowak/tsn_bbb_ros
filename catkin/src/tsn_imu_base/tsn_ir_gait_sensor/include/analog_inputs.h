@@ -16,6 +16,13 @@
 #include <stdint.h>
 #include <string.h>
 #include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
 /*
 #define BBB_AIN0_FILE "sys/bus/iio/devices/iio:device0/in_voltage0_raw"
@@ -36,9 +43,9 @@ class analog_inputs  {
 
 	private:
 
-		void assign_File(unsigned int pin);
+		void assignFile(unsigned int pin);
 
-		string INDEX_FILE;
+		std::string INDEX_FILE;
 		int file, num;
 		char buf[12];
 		char val[3];
