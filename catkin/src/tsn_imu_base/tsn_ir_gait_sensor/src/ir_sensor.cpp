@@ -14,7 +14,7 @@
 
 unsigned int pin;
 
-ir_sensor::ir_sensor(ros::Nodehandle* nodehandle):nh_(*nodehandle)
+ir_sensor::ir_sensor(ros::NodeHandle* nodehandle):nh_(*nodehandle)
 {
 	ROS_INFO("in class constructor of ir_sensor.cpp");
 
@@ -32,7 +32,7 @@ ir_sensor::ir_sensor(ros::Nodehandle* nodehandle):nh_(*nodehandle)
     bool error = true;
     // ensure that our file exists and is working
     while (error)  {
-    	if (verify_adc_pin(pin))
+    	if (analog_inputs::verify_adc_pin(pin))
     		error = false;
     	else 
     		ROS_ERROR("AIN%d File does not exist!", pin);
@@ -51,7 +51,7 @@ void ir_sensor::initializePublishers()
 
 void ir_sensor::fetchValues()
 {
-	raw_data = adcRead(pin);
+	raw_data = analog_inputs::adcRead(pin);
 	data_out = Float32(1.8*(raw_data/4096));
 	ir_sensor_publisher.publish(data_out);
 }

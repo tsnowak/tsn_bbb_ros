@@ -16,11 +16,12 @@
 // ALWAYS need to include this when using ROS
 #include <ros/ros.h> 
 
-#include <std_msgs/Float32.h>
 // some generically useful stuff to include...
 #include <math.h>
 #include <stdlib.h>
 #include <string>
+
+#include <std_msgs/Float32.h>
 
 const double UPDATE_RATE = 50; // desired publication rate of ir sensor data
 
