@@ -19,7 +19,7 @@ analog_inputs::analog_inputs()  {
 bool analog_inputs::verifyADCPin(unsigned int pin)  {
 
 	int file, leftover;
-	char buf[3];
+	char buf[40];
 
 	leftover = snprintf(buf, sizeof(buf), "sys/bus/iio/devices/iio:device0/in_voltage%d_raw", pin);
 
