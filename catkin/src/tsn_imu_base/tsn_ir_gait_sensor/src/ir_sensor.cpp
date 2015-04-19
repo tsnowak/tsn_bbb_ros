@@ -32,7 +32,7 @@ ir_sensor::ir_sensor(ros::NodeHandle* nodehandle):nh_(*nodehandle)
     bool error = true;
     // ensure that our file exists and is working
     while (error)  {
-    	if (analog_inputs::verify_adc_pin(pin))
+    	if (analog_inputs::verifyADCPin(pin))
     		error = false;
     	else 
     		ROS_ERROR("AIN%d File does not exist!", pin);
@@ -52,7 +52,7 @@ void ir_sensor::initializePublishers()
 void ir_sensor::fetchValues()
 {
 	raw_data = analog_inputs::adcRead(pin);
-	data_out = Float32(1.8*(raw_data/4096));
+	data_out.data = 1.8*(raw_data/4096);
 	ir_sensor_publisher.publish(data_out);
 }
 
@@ -60,7 +60,7 @@ int main (int argc, char** argv)
 {
 	ros::init(argc, argv, "irsensor");
 
-	ros::Nodehandle nh;
+	ros::NodeHandle nh;
 	ir_sensor irsensor(&nh);
 	ros::Rate sleep_timer(UPDATE_RATE);
 
