@@ -19,9 +19,11 @@ analog_inputs::analog_inputs()  {
 bool analog_inputs::verifyADCPin(unsigned int pin)  {
 
 	int file, leftover;
-	char buf[100];
+	char buf[128];
 
-	leftover = snprintf(buf, sizeof(buf), "sys/bus/iio/devices/iio:device0/in_voltage%d_raw", pin);
+	leftover = snprintf(buf, sizeof(buf), "sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin);
+
+	printf("Leftover: %d", leftover);
 
 	file = open(buf, O_RDONLY);
 
@@ -40,10 +42,10 @@ bool analog_inputs::verifyADCPin(unsigned int pin)  {
 int analog_inputs::adcRead(unsigned int pin)
 {
 	int file, leftover;
-	char buf[100];
+	char buf[128];
 	char val[3];
 
-	leftover = snprintf(buf, sizeof(buf), "sys/bus/iio/devices/iio:device0/in_voltage%d_raw", pin);
+	leftover = snprintf(buf, sizeof(buf), "sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin);
 
 	file = open(buf, O_RDONLY);
 
