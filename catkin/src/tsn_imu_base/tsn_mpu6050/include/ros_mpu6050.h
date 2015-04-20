@@ -32,8 +32,7 @@ const double UPDATE_RATE = 50; // desired publication rate of IMU data
 const double limg = 1000;  // used to convert rotational accel to deg/s
 const double lima = 2*9.8;  // used to convert linear accel to m/s^2
 
-class ros_mpu6050
-{
+class ros_mpu6050  {
 public:
 	ros_mpu6050(ros::NodeHandle* nodehandle); // our main function needs to initialize a ROS node handler
 	void initializePublishers();

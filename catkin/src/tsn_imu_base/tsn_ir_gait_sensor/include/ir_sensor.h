@@ -26,20 +26,18 @@
 
 const double UPDATE_RATE = 50; // desired publication rate of ir sensor data
 
-class ir_sensor
-{
-public:
+class ir_sensor  {
+	public:
+		ir_sensor(ros::NodeHandle* nodehandle);
+		void initializePublishers();
+		void fetchValues();
 
-	ir_sensor(ros::NodeHandle* nodehandle); // our main function needs to initialize a ROS node handler
-	void initializePublishers();
-	void fetchValues();
-private:
-
-	ros::NodeHandle nh_;
-	ros::Publisher ir_sensor_publisher;
-	std_msgs::Float32 data_out;  // variable name for our std_msgs::Float32 output
-	float raw_data;
-	FILE* file;
+	private:
+		ros::NodeHandle nh_;
+		ros::Publisher ir_sensor_publisher;
+		std_msgs::Float32 data_out;  // variable name for our std_msgs::Float32 output
+		float raw_data;  // variable we will store the raw 0-4096 data to
+		FILE* file;  // File where our data is held/to be read from
 };
 
 #endif /* _IR_SENSOR_H_ */

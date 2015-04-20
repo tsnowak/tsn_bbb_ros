@@ -20,8 +20,8 @@ int8_t imuid;
 // or 2 ----- it should show a table of --'s or UU's for empty and N/A or in use I2C ports.
 // Your IMU is shown as a number at the address it is using Ex. 60 and 8 for the default
 // MPU-6050 address) and start up publisher and other ROS resources
-ros_mpu6050::ros_mpu6050(ros::NodeHandle* nodehandle):nh_(*nodehandle)
-{ 
+ros_mpu6050::ros_mpu6050(ros::NodeHandle* nodehandle):nh_(*nodehandle)  { 
+    
     ROS_INFO("in class constructor of ros_mpu6050");
 
     initializePublishers();
@@ -47,19 +47,16 @@ ros_mpu6050::ros_mpu6050(ros::NodeHandle* nodehandle):nh_(*nodehandle)
     imu.initialize();
 
     ROS_INFO("Done Initializing!"); 
-
 }
 
 // Simple function to set up all publishers (more can be added as desired)
-void ros_mpu6050::initializePublishers()
-{
+void ros_mpu6050::initializePublishers()  {
     ROS_INFO("Initializing Publishers: imu_publisher");
     imu_publisher = nh_.advertise<sensor_msgs::Imu>("mpu_6050", 1, true); // publish IMU data in package sensor_msgs::Imu
 }
 
 // retrieve IMU angular and linear accel values from IMU registers
-void ros_mpu6050::fetchValues()
-{
+void ros_mpu6050::fetchValues()  {
     // Retrieve IMU register gyro/accel data
     imu.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
 
@@ -80,8 +77,8 @@ void ros_mpu6050::fetchValues()
    	imu_publisher.publish(data_out);  // publish
 }
 
-int main(int argc, char** argv) 
-{
+int main(int argc, char** argv)  {
+    
     // ROS set-ups:
     ros::init(argc, argv, "rosmpu6050"); // node name
 

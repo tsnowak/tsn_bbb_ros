@@ -24,23 +24,11 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
-/*
-#define BBB_AIN0_FILE "sys/bus/iio/devices/iio:device0/in_voltage0_raw"
-#define BBB_AIN1_FILE "sys/bus/iio/devices/iio:device0/in_voltage1_raw"
-#define BBB_AIN2_FILE "sys/bus/iio/devices/iio:device0/in_voltage2_raw"
-#define BBB_AIN3_FILE "sys/bus/iio/devices/iio:device0/in_voltage3_raw"
-#define BBB_AIN4_FILE "sys/bus/iio/devices/iio:device0/in_voltage4_raw"
-#define BBB_AIN5_FILE "sys/bus/iio/devices/iio:device0/in_voltage5_raw"
-#define BBB_AIN6_FILE "sys/bus/iio/devices/iio:device0/in_voltage6_raw"
-*/
-
 class analog_inputs  {
-
 	public:
-
 		analog_inputs();
-		static FILE* returnFile(unsigned int pin);  
-		// static long getFileSize(FILE* file);
+
+		static FILE* openFile(unsigned int pin);  
 		static bool verifyADCPin(FILE* file);
 		static float adcRead(FILE* file);
 		static void closeFile(FILE* file);
