@@ -39,9 +39,11 @@ ir_sensor::ir_sensor(ros::NodeHandle* nodehandle):nh_(*nodehandle)
     while (error && count < 5)  {
     	file = analog_inputs::openFile(pin);  // open our file for reading
 
-    	if (analog_inputs::verifyADCPin(file))  // try to read from it
+    	// try to read from it
+    	if (analog_inputs::verifyADCPin(file))  {  
     		ROS_INFO("Successfully read from file for Analog Pin %u!", pin);
     		error = false;
+    	}
     	else  {
     		ROS_ERROR("Error reading file for in_voltage%u_raw", pin);
     		ros::Duration(0.5).sleep();  // Don't eat up cpu, just take a short nap and try again
