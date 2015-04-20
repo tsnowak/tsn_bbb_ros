@@ -18,7 +18,7 @@
 #include <ros/ros.h> 
 
 // Include our modified MPU6050 library (which references I2Cdev)
-#include <MPU6050.h">
+#include "MPU6050.h"
 
 // some generically useful stuff to include...
 #include <math.h>
