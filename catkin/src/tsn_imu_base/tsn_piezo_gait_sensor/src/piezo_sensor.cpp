@@ -52,7 +52,7 @@ piezo_sensor::piezo_sensor(ros::NodeHandle* nodehandle):nh_(*nodehandle)  {
     }
     
 
-    ROS_INFO("Finished starting IR Sensor");
+    ROS_INFO("Finished starting Piezo Sensor");
 }
 
 // initialize publishers
