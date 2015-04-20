@@ -1,5 +1,5 @@
 /* Code to record from IR SENSOR to function using ROS Indigo on a Beaglebone
-*  Black with Ubuntu ARM OS.
+*  Black with Linux ARM OS running Kernel version 3.8.x.
 *  Developer: Theodore Nowak BSc., Case Western Reserve University EECS Department
 *  Date of Initiation: 03/23/2015
 *
@@ -18,9 +18,9 @@
 #include "analog_inputs.h"
 // some generically useful stuff to include...
 #include <math.h>
-#include <stdlib.h>
+// #include <stdlib.h>
 #include <string>
-#include <stdio.h>
+// #include <stdio.h>
 
 #include <std_msgs/Float32.h>
 

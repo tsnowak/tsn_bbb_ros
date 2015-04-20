@@ -1,17 +1,51 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(tsn_piezo_gait_sensor)
 
-## Find catkin macros and libraries
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS
+catkin_package()
+
+find_package(catkin REQUIRED
   roscpp
-  rospy
   std_msgs
 )
 
+## Specify additional locations of header files
+## Your package locations should be listed before other locations
+# include_directories(include)
+include_directories(include 
+  						${catkin_INCLUDE_DIRS}
+  						${tsn_piezo_gait_sensor_INCLUDE_DIRS}
+)
+
+#Executables
+add_executable(piezo_sensor src/piezo_sensor.cpp)
+
+#Libraries
+## Declare a cpp library
+# add_library(tsn_mpu6050
+#   src/${PROJECT_NAME}/tsn_mpu6050.cpp
+# )
+add_library(analog_inputs src/analog_inputs.cpp)
+
+target_link_libraries(piezo_sensor ${catkin_LIBRARIES})
+target_link_libraries(piezo_sensor analog_inputs)
+
+#cs_install()
+#cs_export()
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
+##find_package(catkin_simple REQUIRED)
 
 
 ## Uncomment this if the package has a setup.py. This macro ensures
@@ -81,8 +115,8 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES tsn_piezo_gait_sensor
-#  CATKIN_DEPENDS roscpp rospy std_msgs
+#  LIBRARIES tsn_mpu6050
+#  CATKIN_DEPENDS roscpp std_msgs
 #  DEPENDS system_lib
 )
 
@@ -90,27 +124,22 @@ catkin_package(
 ## Build ##
 ###########
 
-## Specify additional locations of header files
-## Your package locations should be listed before other locations
-# include_directories(include)
-include_directories(
-  ${catkin_INCLUDE_DIRS}
-)
+
 
 ## Declare a cpp library
-# add_library(tsn_piezo_gait_sensor
-#   src/${PROJECT_NAME}/tsn_piezo_gait_sensor.cpp
+# add_library(tsn_mpu6050
+#   src/${PROJECT_NAME}/tsn_mpu6050.cpp
 # )
 
 ## Declare a cpp executable
-# add_executable(tsn_piezo_gait_sensor_node src/tsn_piezo_gait_sensor_node.cpp)
+# add_executable(tsn_mpu6050_node src/tsn_mpu6050_node.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
-# add_dependencies(tsn_piezo_gait_sensor_node tsn_piezo_gait_sensor_generate_messages_cpp)
+# add_dependencies(tsn_mpu6050_node tsn_mpu6050_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(tsn_piezo_gait_sensor_node
+# target_link_libraries(tsn_mpu6050_node
 #   ${catkin_LIBRARIES}
 # )
 
@@ -129,7 +158,7 @@ include_directories(
 # )
 
 ## Mark executables and/or libraries for installation
-# install(TARGETS tsn_piezo_gait_sensor tsn_piezo_gait_sensor_node
+# install(TARGETS tsn_mpu6050 tsn_mpu6050_node
 #   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
@@ -154,7 +183,7 @@ include_directories(
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_tsn_piezo_gait_sensor.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_tsn_mpu6050.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
