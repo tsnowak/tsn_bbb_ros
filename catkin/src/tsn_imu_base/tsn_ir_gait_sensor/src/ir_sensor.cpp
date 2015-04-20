@@ -13,7 +13,7 @@
 #include <ir_sensor.h>
 
 unsigned int pin;
-FILE* file;
+
 
 ir_sensor::ir_sensor(ros::NodeHandle* nodehandle):nh_(*nodehandle)
 {
@@ -74,7 +74,6 @@ int main (int argc, char** argv)
 		irsensor.fetchValues();
 		ros::spinOnce();
 		sleep_timer.sleep();
-		rewind(file);
 	}
 	return 0;
 }

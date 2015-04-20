@@ -31,6 +31,7 @@ bool analog_inputs::verifyADCPin(FILE* file)  {
 	long int value_int = 0;
 	unsigned int error_check;
 
+	rewind(file);
 	error_check = fread(&val, 6,6,file);
 	
 	/*if (error_check != 6)  {
@@ -51,7 +52,9 @@ int analog_inputs::adcRead(FILE* file)
 	long int value_int = 0;
 	unsigned int debug = 0;
 
+	rewind(file);
 	debug = fread(&val, 6,6,file);
+	perror();
 	printf("Debug: %u", debug);
 	value_int = strtol(val,NULL,0);
 	return value_int;
