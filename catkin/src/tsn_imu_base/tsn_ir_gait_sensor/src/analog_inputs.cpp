@@ -49,8 +49,10 @@ int analog_inputs::adcRead(FILE* file)
 {
 	char val[7];
 	long int value_int = 0;
+	unsigned int debug = 0;
 
-	fread(&val, 6,6,file);
+	debug = fread(&val, 6,6,file);
+	printf("Debug: %u", debug);
 	value_int = strtol(val,NULL,0);
 	return value_int;
 }
