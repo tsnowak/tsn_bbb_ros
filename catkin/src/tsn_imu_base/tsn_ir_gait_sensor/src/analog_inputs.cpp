@@ -15,9 +15,7 @@
 analog_inputs::analog_inputs()  {
 }
 
-// Check that we are getting values from the adc
-bool analog_inputs::verifyADCPin(unsigned int pin)  {
-
+FILE* analog_inputs::returnFile(unsigned int pin)  {
 	char val[7];
 	long int value_int = 0;
 	unsigned int error_check;
@@ -25,6 +23,20 @@ bool analog_inputs::verifyADCPin(unsigned int pin)  {
 	snprintf(file_name, 81, "/sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin);
 
 	FILE* file = fopen(file_name, "r");
+
+	return file;
+}
+
+// Check that we are getting values from the adc
+bool analog_inputs::verifyADCPin(FILE* file)  {
+
+	char val[7];
+	// long int value_int = 0;
+	unsigned int error_check;
+	// char file_name[81];
+	// snprintf(file_name, 81, "/sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin);
+
+	// FILE* file = fopen(file_name, "r");
 
 	error_check = fread(&val, 6,6,file);
 	
@@ -41,14 +53,14 @@ bool analog_inputs::verifyADCPin(unsigned int pin)  {
 }
 
 // Read the current ADC value from input pin
-int analog_inputs::adcRead(unsigned int pin)
+int analog_inputs::adcRead(FILE* file)
 {
 	char val[7];
 	long int value_int = 0;
-	char file_name[81];
-	snprintf(file_name, 81, "/sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin);
+	// char file_name[81];
+	// snprintf(file_name, 81, "/sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin);
 
-	FILE* file = fopen(file_name, "r");
+	// FILE* file = fopen(file_name, "r");
 
 	fread(&val, 6,6,file);
 

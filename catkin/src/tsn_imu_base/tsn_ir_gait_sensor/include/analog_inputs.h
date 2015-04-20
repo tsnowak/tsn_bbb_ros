@@ -39,9 +39,9 @@ class analog_inputs  {
 	public:
 
 		analog_inputs();
-
-		static bool verifyADCPin(unsigned int pin);
-		static int adcRead(unsigned int pin);
+		static FILE* returnFile(unsigned int pin); 
+		static bool verifyADCPin(FILE* file);
+		static int adcRead(FILE* file);
 };
 
 #endif /* _ANALOG_INPUTS_H_ */
