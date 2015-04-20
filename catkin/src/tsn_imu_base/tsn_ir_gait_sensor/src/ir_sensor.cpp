@@ -16,8 +16,7 @@
 unsigned int pin;
 
 // constructor for ir_sensor
-ir_sensor::ir_sensor(ros::NodeHandle* nodehandle):nh_(*nodehandle)
-{
+ir_sensor::ir_sensor(ros::NodeHandle* nodehandle):nh_(*nodehandle)  {
 
 	ROS_INFO("in class constructor of ir_sensor.cpp");
 
@@ -57,15 +56,13 @@ ir_sensor::ir_sensor(ros::NodeHandle* nodehandle):nh_(*nodehandle)
 }
 
 // initialize all of our publishers in one fell swoop
-void ir_sensor::initializePublishers()
-{
+void ir_sensor::initializePublishers()  {
 	ROS_INFO("Initializing Publishers: ir_sensor_publisher");
 	ir_sensor_publisher = nh_.advertise<std_msgs::Float32>("ir_sensor", 1, true);
 }
 
 // function to fetch and publish ADC values for certain pin
-void ir_sensor::fetchValues()
-{
+void ir_sensor::fetchValues()  {
 	file = analog_inputs::openFile(pin);  // open the file with the ADC data for our pin inside
 
 	raw_data = analog_inputs::adcRead(file);  // read this data and store it in our local var raw_data
@@ -77,8 +74,7 @@ void ir_sensor::fetchValues()
 	analog_inputs::closeFile(file);  // and per usual remember to close the file we read from
 }
 
-int main (int argc, char** argv)
-{
+int main (int argc, char** argv)  {
 	ros::init(argc, argv, "irsensor");  // initialize our ros node "irsensor"
 
 	ros::NodeHandle nh;

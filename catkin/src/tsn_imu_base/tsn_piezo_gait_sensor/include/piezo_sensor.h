@@ -17,10 +17,11 @@
 
 // ALWAYS need to include this when using ROS
 #include <ros/ros.h> 
-#include "analog_inputs.h"
+#include <analog_inputs.h>
+
 // some generically useful stuff to include...
 #include <math.h>
-// #include <stdlib.h>
+#include <stdlib.h>
 #include <string>
 // #include <stdio.h>
 
