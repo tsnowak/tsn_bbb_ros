@@ -27,7 +27,7 @@ add_executable(piezo_sensor src/piezo_sensor.cpp)
 add_library(analog_inputs src/analog_inputs.cpp)
 
 target_link_libraries(piezo_sensor ${catkin_LIBRARIES})
-target_link_libraries(piezo_sensor analog_inputs)
+#target_link_libraries(piezo_sensor analog_inputs)
 
 #cs_install()
 #cs_export()
