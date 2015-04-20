@@ -38,9 +38,8 @@ private:
 	ros::NodeHandle nh_;
 	ros::Publisher ir_sensor_publisher;
 	std_msgs::Float32 data_out;  // variable name for our std_msgs::Float32 output
-	int raw_data;
+	float raw_data;
 	FILE* file;
-	long size;
 };
 
 #endif /* _IR_SENSOR_H_ */
