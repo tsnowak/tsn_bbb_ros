@@ -57,13 +57,13 @@ piezo_sensor::piezo_sensor(ros::Nodehandle* nodehandle):nh_(*nodehandle)  {
 }
 
 // initialize publishers
-piezo_sensor::initializePublishers()  {
+void piezo_sensor::initializePublishers()  {
 	ROS_INFO("Initializing Publisher: piezo_sensor_publisher");
 	piezo_sensor_publisher = nh_.advertise<std_msgs::Float32>("piezo_sensor", 1, true);
 }
 
 // function to fetch and publish ADC values for certain pin
-piezo_sensor::fetchValues()  {
+void piezo_sensor::fetchValues()  {
 
 	file = analog_inputs::openFile(pin);  // open the file with the ADC data for our pin inside
 
