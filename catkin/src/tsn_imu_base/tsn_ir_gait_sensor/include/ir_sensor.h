@@ -20,6 +20,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include <string>
+#include <stdio.h>
 
 #include <std_msgs/Float32.h>
 
