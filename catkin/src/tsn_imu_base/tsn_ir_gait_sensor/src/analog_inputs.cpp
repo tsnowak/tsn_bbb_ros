@@ -21,7 +21,7 @@ char* analog_inputs::returnFile(unsigned int pin)  {
 	return file_name;
 }
 
-FILE* analog_inputs::openFile(char file_name)  {
+FILE* analog_inputs::openFile(char* file_name)  {
 	FILE* file = fopen(file_name, "r");
 	return file;
 }
