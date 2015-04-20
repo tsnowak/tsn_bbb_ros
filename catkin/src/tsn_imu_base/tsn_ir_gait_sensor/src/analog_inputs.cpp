@@ -28,13 +28,15 @@ bool analog_inputs::verifyADCPin(unsigned int pin)  {
 
 	error_check = fread(&val, 6,6,file);
 	
-	if (error_check != 6)  {
+	/*if (error_check != 6)  {
 		printf("Reading error.");
 		return false;
 	}
 	else  {
 		return true;
-	}
+	}*/
+
+	return true;
 
 }
 
