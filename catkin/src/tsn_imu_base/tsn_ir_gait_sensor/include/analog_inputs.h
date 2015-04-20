@@ -42,7 +42,7 @@ class analog_inputs  {
 		static FILE* returnFile(unsigned int pin); 
 		// static long getFileSize(FILE* file);
 		static bool verifyADCPin(FILE* file);
-		static int adcRead(FILE* file);
+		static float adcRead(FILE* file);
 };
 
 #endif /* _ANALOG_INPUTS_H_ */
