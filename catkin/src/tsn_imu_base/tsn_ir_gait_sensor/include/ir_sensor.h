@@ -40,8 +40,7 @@ private:
 	std_msgs::Float32 data_out;  // variable name for our std_msgs::Float32 output
 	float raw_data;
 	FILE* file;
-	char* file_name;
-	char buffer_file_name[81];
+	char file_name;
 };
 
 #endif /* _IR_SENSOR_H_ */
