@@ -18,25 +18,23 @@ analog_inputs::analog_inputs()  {
 // Check that we are getting values from the adc
 bool analog_inputs::verifyADCPin(unsigned int pin)  {
 
-	int file, leftover;
-	char buf[128];
+	// int leftover;
+	// char buf[128];
+	char val[7];
+	long int value_int = 0;
+	unsigned int error_check;
 
-	leftover = snprintf(buf, sizeof(buf), "sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin);
+	// leftover = snprintf(buf, sizeof(buf), "/sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin);
 
-	printf("Leftover: %d \n", leftover);
-	printf("Buf: %s \n", buf);
+	FILE* file = fopen("/sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin, "r");
 
-
-	file = open(buf, O_RDONLY);
-
-	printf("file: %d \n", file);
-
-	if (file < 0)  {
-		printf("Failed to open the bus.\n");
+	error_check = fread(&val, 6,6,file);
+	
+	if (error_check != 6)  {
+		printf("Reading error.");
 		return false;
 	}
 	else  {
-		printf("Successfully connected to bus.\n");
 		return true;
 	}
 
@@ -45,20 +43,18 @@ bool analog_inputs::verifyADCPin(unsigned int pin)  {
 // Read the current ADC value from input pin
 int analog_inputs::adcRead(unsigned int pin)
 {
-	int file, leftover;
-	char buf[128];
-	char val[3];
+	// int leftover;
+	// char buf[128];
+	char val[7];
+	long int value_int = 0;
 
-	leftover = snprintf(buf, sizeof(buf), "sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin);
+	// leftover = snprintf(buf, sizeof(buf), "/sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin);
 
-	file = open(buf, O_RDONLY);
+	FILE* file = fopen("/sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin, "r");
 
-	if (file < 0)  {
-		printf("Failed to open the bus.\n");
-	}
+	fread(&val, 6,6,file);
 
-	read(file, &val, 3);
-	close(file);
+	value_int = strtol(val,NULL,0);
 
-	return atoi(val);
+	return value_int;
 }
