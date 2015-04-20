@@ -39,10 +39,12 @@ class analog_inputs  {
 	public:
 
 		analog_inputs();
-		static FILE* returnFile(unsigned int pin); 
+		static char* returnFile(unsigned int pin);
+		static FILE* analog_inputs::openFile(char* file_name);  
 		// static long getFileSize(FILE* file);
 		static bool verifyADCPin(FILE* file);
 		static float adcRead(FILE* file);
+		static void closeFile(FILE* file);
 };
 
 #endif /* _ANALOG_INPUTS_H_ */

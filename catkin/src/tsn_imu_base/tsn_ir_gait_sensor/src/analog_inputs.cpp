@@ -15,12 +15,14 @@
 analog_inputs::analog_inputs()  {
 }
 
-FILE* analog_inputs::returnFile(unsigned int pin)  {
+char* analog_inputs::returnFile(unsigned int pin)  {
 	char file_name[81];
 	snprintf(file_name, 81, "/sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin);
+	return file_name;
+}
 
+FILE* analog_inputs::openFile(char* file_name)  {
 	FILE* file = fopen(file_name, "r");
-
 	return file;
 }
 
@@ -56,16 +58,11 @@ bool analog_inputs::verifyADCPin(FILE* file)  {
 	return true;
 
 }
-/*
-long analog_inputs::getFileSize(FILE* file){
-	long size;
 
-	fseek(file, 0, SEEK_END);
-	size = ftell(file);
-	rewind(file);
-
-	return size;
-}*/
+void analog_inputs::closeFile(FILE* file)
+{
+	fclose(file);
+}
 
 // Read the current ADC value from input pin
 float analog_inputs::adcRead(FILE* file)
