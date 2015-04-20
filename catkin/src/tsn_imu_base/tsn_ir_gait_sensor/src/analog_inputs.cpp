@@ -73,6 +73,6 @@ int analog_inputs::adcRead(FILE* file, long size)
 	debug = fread(val, 2, size, file);
 	//perror();
 	printf("Debug: %u", debug);
-	value_int = strtol(val,NULL,0);
+	value_int = strtol(val,NULL,2);
 	return value_int;
 }
