@@ -33,6 +33,7 @@ ir_sensor::ir_sensor(ros::NodeHandle* nodehandle):nh_(*nodehandle)
     file = analog_inputs::returnFile(pin);
 
     bool error = true;
+    int count = 0;
     // ensure that our file exists and is working
     while (error && count <= 5)  {
     	if (analog_inputs::verifyADCPin(file))
