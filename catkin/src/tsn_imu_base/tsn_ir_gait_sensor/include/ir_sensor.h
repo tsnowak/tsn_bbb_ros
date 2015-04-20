@@ -41,6 +41,7 @@ private:
 	float raw_data;
 	FILE* file;
 	char* file_name;
+	char buffer_file_name[81];
 };
 
 #endif /* _IR_SENSOR_H_ */

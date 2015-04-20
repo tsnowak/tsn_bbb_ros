@@ -30,7 +30,7 @@ ir_sensor::ir_sensor(ros::NodeHandle* nodehandle):nh_(*nodehandle)
 
     ROS_INFO("Initialzing IR Sensor...");
 
-    file_name = analog_inputs::returnFile(pin);
+    file_name = analog_inputs::returnFile(pin, buffer_file_name);
    
     bool error = true;
     int count = 0;
