@@ -23,7 +23,7 @@ bool analog_inputs::verifyADCPin(unsigned int pin)  {
 	char val[7];
 	long int value_int = 0;
 	unsigned int error_check;
-	const char* file_name =  "/sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin;
+	const char* file_name =  ("/sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin);
 	// leftover = snprintf(buf, sizeof(buf), "/sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin);
 
 	FILE* file = fopen(file_name, "r");
@@ -47,7 +47,7 @@ int analog_inputs::adcRead(unsigned int pin)
 	// char buf[128];
 	char val[7];
 	long int value_int = 0;
-	const char* file_name = "/sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin;
+	const char* file_name = ("/sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin);
 	// leftover = snprintf(buf, sizeof(buf), "/sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin);
 
 	FILE* file = fopen(file_name, "r");
