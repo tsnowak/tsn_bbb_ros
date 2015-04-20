@@ -55,7 +55,7 @@ void ir_sensor::initializePublishers()
 
 void ir_sensor::fetchValues()
 {
-	raw_data = analog_inputs::adcRead(file, val, value_int);
+	raw_data = analog_inputs::adcRead(file);
 	data_out.data = 1.8*(raw_data/4096);
 	ir_sensor_publisher.publish(data_out);
 }
@@ -73,7 +73,7 @@ int main (int argc, char** argv)
 		irsensor.fetchValues();
 		ros::spinOnce();
 		sleep_timer.sleep();
-		rewind(file);
+		irsensor.rewind(file);
 	}
 	return 0;
 }

@@ -41,8 +41,6 @@ private:
 	std_msgs::Float32 data_out;  // variable name for our std_msgs::Float32 output
 	int raw_data;
 	FILE* file;
-	const char* val[7];
-	long int value_int = 0;
 };
 
 #endif /* _IR_SENSOR_H_ */

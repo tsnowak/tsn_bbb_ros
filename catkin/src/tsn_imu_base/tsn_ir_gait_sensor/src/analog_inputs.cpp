@@ -25,8 +25,10 @@ FILE* analog_inputs::returnFile(unsigned int pin)  {
 }
 
 // Check that we are getting values from the adc
-bool analog_inputs::verifyADCPin(FILE* file, const char* val)  {
+bool analog_inputs::verifyADCPin(FILE* file)  {
 
+	char val[7];
+	long int value_int = 0;
 	unsigned int error_check;
 
 	error_check = fread(&val, 6,6,file);
@@ -43,8 +45,11 @@ bool analog_inputs::verifyADCPin(FILE* file, const char* val)  {
 }
 
 // Read the current ADC value from input pin
-int analog_inputs::adcRead(FILE* file, const char* val, long int value_int)
+int analog_inputs::adcRead(FILE* file)
 {
+	char val[7];
+	long int value_int = 0;
+
 	fread(&val, 6,6,file);
 	value_int = strtol(val,NULL,0);
 	return value_int;
