@@ -54,7 +54,7 @@ long analog_inputs::getFileSize(FILE* file){
 	long size;
 
 	fseek(file, 0, SEEK_END);
-	size ftell(file);
+	size = ftell(file);
 	rewind(file);
 
 	return size;
