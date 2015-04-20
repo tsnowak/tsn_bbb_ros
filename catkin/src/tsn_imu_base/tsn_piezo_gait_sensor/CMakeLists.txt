@@ -28,7 +28,6 @@ add_executable(piezo_sensor src/piezo_sensor.cpp)
 #   src/${PROJECT_NAME}/tsn_mpu6050.cpp
 # )
 #add_library(analog_inputs src/analog_inputs.cpp)
-#link_directories(/ros_workspaces/local/lib)
 
 target_link_libraries(piezo_sensor ${catkin_LIBRARIES})
 target_link_libraries(piezo_sensor analog_inputs)
