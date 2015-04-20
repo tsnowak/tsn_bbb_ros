@@ -8,8 +8,6 @@
 *  value.
 *
 *  Application: Low cost gait tracking.
-*
-*  Application: Low cost gait tracking.
 */
 
 #include <piezo_sensor.h>
@@ -17,6 +15,7 @@
 // global variable of pin to which our IR Sensor is connected to
 unsigned int pin; 
 
+// constructor for piezo sensor
 piezo_sensor::piezo_sensor(ros::Nodehandle* nodehandle):nh_(*nodehandle)  {
 
 	ROS_INFO("in class constructor of piezo_sensor.cpp");
@@ -64,7 +63,6 @@ void piezo_sensor::initializePublishers()  {
 
 // function to fetch and publish ADC values for certain pin
 void piezo_sensor::fetchValues()  {
-
 	file = analog_inputs::openFile(pin);  // open the file with the ADC data for our pin inside
 
 	raw_data = analog_inputs::adcRead(file);  // read this data and store it in our local var raw_data
@@ -77,13 +75,13 @@ void piezo_sensor::fetchValues()  {
 }
 
 int main (int argc, char** argv)  {
-
 	ros::init(argc, argv, "piezosensor");  // initialize our ros node "piezosensor"
 
-	ros::Nodehandle nh;
+	ros::NodeHandle nh;
 	piezo_sensor piezosensor(&nh);  // our node hungers for a nodehandler
 	ros::Rate sleep_timer(UPDATE_RATE);  // create a sleep timer with rate UPDATE_RATE
 
+    // fetch, update, sleep, repeat
 	while (ros::ok())  {
 		piezosensor.fetchValues();
 		ros::spinOnce();

@@ -6,9 +6,7 @@
 *  Functionality: Output std_msgs::Float32 containing analog input voltage from
 *  desired pin. In future, attempt to make custom message type to output with this
 *  value.
-*
-*  Application: Low cost gait tracking.
-*
+
 *  Application: Low cost gait tracking.
 */
 
@@ -18,7 +16,6 @@
 // ALWAYS need to include this when using ROS
 #include <ros/ros.h> 
 #include "analog_inputs.h"
-
 // some generically useful stuff to include...
 #include <math.h>
 // #include <stdlib.h>
