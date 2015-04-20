@@ -33,7 +33,6 @@ public:
 	ir_sensor(ros::NodeHandle* nodehandle); // our main function needs to initialize a ROS node handler
 	void initializePublishers();
 	void fetchValues();
-	FILE* file;
 private:
 
 	ros::NodeHandle nh_;

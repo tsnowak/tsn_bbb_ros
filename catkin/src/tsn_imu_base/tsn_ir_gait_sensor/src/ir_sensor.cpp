@@ -13,6 +13,7 @@
 #include <ir_sensor.h>
 
 unsigned int pin;
+FILE* file;
 
 ir_sensor::ir_sensor(ros::NodeHandle* nodehandle):nh_(*nodehandle)
 {
