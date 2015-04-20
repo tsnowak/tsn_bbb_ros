@@ -8,12 +8,15 @@ find_package(catkin REQUIRED
   std_msgs
 )
 
+find_package(tsn_bbb_libs REQUIRED)
+
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 # include_directories(include)
 include_directories(include 
   						${catkin_INCLUDE_DIRS}
   						${tsn_piezo_gait_sensor_INCLUDE_DIRS}
+  						${tsn_bbb_libs_INCLUDE_DIRS}
 )
 
 #Executables
@@ -25,9 +28,10 @@ add_executable(piezo_sensor src/piezo_sensor.cpp)
 #   src/${PROJECT_NAME}/tsn_mpu6050.cpp
 # )
 #add_library(analog_inputs src/analog_inputs.cpp)
+#link_directories(/ros_workspaces/local/lib)
 
 target_link_libraries(piezo_sensor ${catkin_LIBRARIES})
-#target_link_libraries(piezo_sensor analog_inputs)
+target_link_libraries(piezo_sensor analog_inputs)
 
 #cs_install()
 #cs_export()

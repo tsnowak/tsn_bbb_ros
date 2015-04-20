@@ -1,40 +1,36 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(tsn_mpu6050)
+project(tsn_bbb_libs)
 
 catkin_package()
 
 find_package(catkin REQUIRED
   roscpp
   std_msgs
-  sensor_msgs
-  #I2Cdev REQUIRED
-  #MPU6050 REQUIRED
 )
-
-find_package(tsn_bbb_libs REQUIRED)
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 # include_directories(include)
 include_directories(include 
   						${catkin_INCLUDE_DIRS}
-  						${tsn_mpu6050_INCLUDE_DIRS}
   						${tsn_bbb_libs_INCLUDE_DIRS}
 )
 
 #Executables
-add_executable(ros_mpu6050 src/ros_mpu6050.cpp)
+#add_executable(ir_sensor src/ir_sensor.cpp)
 
 #Libraries
 ## Declare a cpp library
 # add_library(tsn_mpu6050
 #   src/${PROJECT_NAME}/tsn_mpu6050.cpp
 # )
-#add_library(MPU6050 src/MPU6050.cpp)
-#add_library(I2Cdev src/I2Cdev.cpp)
+add_library(I2Cdev src/I2Cdev.cpp)
+add_library(analog_inputs src/analog_inputs.cpp)
+add_library(MPU6050 src/MPU6050.cpp)
 
-target_link_libraries(ros_mpu6050 ${catkin_LIBRARIES})
-target_link_libraries(ros_mpu6050 MPU6050 I2Cdev)
+
+#target_link_libraries(ir_sensor ${catkin_LIBRARIES})
+#target_link_libraries(ir_sensor analog_inputs)
 
 #cs_install()
 #cs_export()

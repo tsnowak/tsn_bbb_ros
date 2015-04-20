@@ -8,12 +8,15 @@ find_package(catkin REQUIRED
   std_msgs
 )
 
+find_package(tsn_bbb_libs REQUIRED)
+
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 # include_directories(include)
 include_directories(include 
   						${catkin_INCLUDE_DIRS}
   						${tsn_ir_gait_sensor_INCLUDE_DIRS}
+  						${tsn_bbb_libs_INCLUDE_DIRS}
 )
 
 #Executables
@@ -24,7 +27,7 @@ add_executable(ir_sensor src/ir_sensor.cpp)
 # add_library(tsn_mpu6050
 #   src/${PROJECT_NAME}/tsn_mpu6050.cpp
 # )
-add_library(analog_inputs src/analog_inputs.cpp)
+#add_library(analog_inputs src/analog_inputs.cpp)
 
 target_link_libraries(ir_sensor ${catkin_LIBRARIES})
 target_link_libraries(ir_sensor analog_inputs)
