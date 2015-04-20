@@ -39,8 +39,7 @@ class analog_inputs  {
 	public:
 
 		analog_inputs();
-		static char* returnFile(unsigned int pin);
-		static FILE* openFile(char* file_name);  
+		static FILE* returnFile(unsigned int pin);  
 		// static long getFileSize(FILE* file);
 		static bool verifyADCPin(FILE* file);
 		static float adcRead(FILE* file);

@@ -15,13 +15,9 @@
 analog_inputs::analog_inputs()  {
 }
 
-char* analog_inputs::returnFile(unsigned int pin)  {
+FILE* analog_inputs::returnFile(unsigned int pin)  {
 	char file_name[81];
 	snprintf(file_name, 81, "/sys/bus/iio/devices/iio:device0/in_voltage%u_raw", pin);
-	return file_name;
-}
-
-FILE* analog_inputs::openFile(char* file_name)  {
 	FILE* file = fopen(file_name, "r");
 	return file;
 }

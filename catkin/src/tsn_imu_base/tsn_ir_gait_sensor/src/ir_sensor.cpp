@@ -29,14 +29,12 @@ ir_sensor::ir_sensor(ros::NodeHandle* nodehandle):nh_(*nodehandle)
         }
 
     ROS_INFO("Initialzing IR Sensor...");
-
-    file_name = analog_inputs::returnFile(pin);
    
     bool error = true;
     int count = 0;
     // ensure that our file exists and is working
     while (error && count <= 5)  {
-    	file = analog_inputs::openFile(file_name);
+    	file = analog_inputs::returnFile(pin);
     	if (analog_inputs::verifyADCPin(file))
     		error = false;
     	else  {
@@ -59,7 +57,7 @@ void ir_sensor::initializePublishers()
 
 void ir_sensor::fetchValues()
 {
-	file = analog_inputs::openFile(file_name);
+	file = analog_inputs::returnFile(pin);
 	raw_data = analog_inputs::adcRead(file);
 	data_out.data = 1.8*(raw_data/4096);
 	ir_sensor_publisher.publish(data_out);
