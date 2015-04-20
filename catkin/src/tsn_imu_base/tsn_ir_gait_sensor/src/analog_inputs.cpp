@@ -54,7 +54,7 @@ int analog_inputs::adcRead(FILE* file)
 
 	rewind(file);
 	debug = fread(&val, 6,6,file);
-	perror();
+	//perror();
 	printf("Debug: %u", debug);
 	value_int = strtol(val,NULL,0);
 	return value_int;
