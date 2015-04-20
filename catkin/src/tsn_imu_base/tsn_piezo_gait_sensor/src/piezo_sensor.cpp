@@ -86,7 +86,7 @@ int main (int argc, char** argv)  {
 
 	while (ros::ok())  {
 		piezosensor.fetchValues();
-		ros::SpinOnce();
+		ros::spinOnce();
 		sleep_timer.sleep();
 	}
 	return 0;
