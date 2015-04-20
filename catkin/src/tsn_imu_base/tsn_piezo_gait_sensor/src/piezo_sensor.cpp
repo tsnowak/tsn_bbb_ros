@@ -78,7 +78,7 @@ piezo_sensor::fetchValues()  {
 
 int main (int argc, char** argv)  {
 
-	ros::init(argc, argc, "piezosensor");  // initialize our ros node "piezosensor"
+	ros::init(argc, argv, "piezosensor");  // initialize our ros node "piezosensor"
 
 	ros::Nodehandle nh;
 	piezo_sensor piezosensor(&nh);  // our node hungers for a nodehandler
