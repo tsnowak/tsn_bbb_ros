@@ -37,7 +37,7 @@ bool analog_inputs::verifyADCPin(FILE* file, long size)  {
 	rewind(file);
 	// error_check = fread(&val, 6,6,file);
 	
-	fread(val, 1, size, file);
+	fread(val, 2, size, file);
 
 	/*if (error_check != 6)  {
 		printf("Reading error.");
@@ -70,7 +70,7 @@ int analog_inputs::adcRead(FILE* file, long size)
 	val = (char*) malloc (sizeof(char)*size);
 
 	rewind(file);
-	debug = fread(val, 1, size, file);
+	debug = fread(val, 2, size, file);
 	//perror();
 	printf("Debug: %u", debug);
 	value_int = strtol(val,NULL,0);
