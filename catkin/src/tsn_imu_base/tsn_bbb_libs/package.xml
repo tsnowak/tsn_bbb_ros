@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>tsn_ir_gait_sensor</name>
+  <name>tsn_bbb_libs</name>
   <version>0.0.0</version>
-  <description>The tsn_ir_gait_sensor package</description>
+  <description>The tsn_bbb_libs package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <!-- Example:  -->
