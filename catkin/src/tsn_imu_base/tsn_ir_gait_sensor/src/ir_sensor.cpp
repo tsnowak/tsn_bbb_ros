@@ -73,7 +73,7 @@ int main (int argc, char** argv)
 		irsensor.fetchValues();
 		ros::spinOnce();
 		sleep_timer.sleep();
-		irsensor.rewind(file);
+		rewind(file);
 	}
 	return 0;
 }
