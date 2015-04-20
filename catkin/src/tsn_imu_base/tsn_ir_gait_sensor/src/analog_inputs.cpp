@@ -25,15 +25,20 @@ FILE* analog_inputs::returnFile(unsigned int pin)  {
 }
 
 // Check that we are getting values from the adc
-bool analog_inputs::verifyADCPin(FILE* file)  {
+bool analog_inputs::verifyADCPin(FILE* file, long size)  {
 
-	char val[7];
+	// char val[7];
+	char * val;
 	long int value_int = 0;
 	unsigned int error_check;
 
+	val = (char*) malloc (sizeof(char)*size);
+
 	rewind(file);
-	error_check = fread(&val, 6,6,file);
+	// error_check = fread(&val, 6,6,file);
 	
+	fread(val, 1, size, file);
+
 	/*if (error_check != 6)  {
 		printf("Reading error.");
 		return false;
@@ -45,15 +50,27 @@ bool analog_inputs::verifyADCPin(FILE* file)  {
 
 }
 
+long analog_inputs::getFileSize(FILE* file){
+	long size;
+
+	fseek(file, 0, SEEK_END);
+	size ftell(file);
+	rewind(file);
+
+	return size;
+}
+
 // Read the current ADC value from input pin
-int analog_inputs::adcRead(FILE* file)
+int analog_inputs::adcRead(FILE* file, long size)
 {
-	char val[7];
+	char * val;
 	long int value_int = 0;
 	unsigned int debug = 0;
 
+	val = (char*) malloc (sizeof(char)*size);
+
 	rewind(file);
-	debug = fread(&val, 6,6,file);
+	debug = fread(val, 1, size, file);
 	//perror();
 	printf("Debug: %u", debug);
 	value_int = strtol(val,NULL,0);
