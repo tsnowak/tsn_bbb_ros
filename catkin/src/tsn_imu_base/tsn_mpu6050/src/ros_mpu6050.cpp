@@ -101,12 +101,14 @@ void ros_mpu6050::fetchValues()  {
 void ros_mpu6050::setGPIOHigh()  {
     gpio_set_value(GPIO, HIGH);
     gpio_data_out.data = 1;
+    gpio_publisher.publish(gpio_data_out);
 }
 
 // set gpio low and publish 0
 void ros_mpu6050::setGPIOLow()  {
     gpio_set_value(GPIO, LOW);
     gpio_data_out.data = 0;
+    gpio_publisher.publish(gpio_data_out);
 }
 
 int main(int argc, char** argv)  {
