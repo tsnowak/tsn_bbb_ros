@@ -21,8 +21,7 @@
 // #include <stdlib.h>
 #include <string>
 // #include <stdio.h>
-
-#include <std_msgs/Float32.h>
+#include <tsn_bbb_msgs/Voltage.h>
 
 const double UPDATE_RATE = 50; // desired publication rate of piezoelectric voltage data
 
@@ -35,7 +34,7 @@ class piezo_sensor  {
 	private:
 		ros::NodeHandle nh_;
 		ros::Publisher piezo_sensor_publisher;
-		std_msgs::Float32 data_out;  // variable name for our std_msgs::Float32 output
+		tsn_bbb_msgs::Voltage data_out;  // variable name for our std_msgs::Float32 output
 		float raw_data;  // variable we will store the raw 0-4096 data to
 		FILE* file;  // File where our data is held/to be read from
 };

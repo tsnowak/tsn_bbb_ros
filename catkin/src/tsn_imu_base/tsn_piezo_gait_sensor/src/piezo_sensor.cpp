@@ -58,7 +58,7 @@ piezo_sensor::piezo_sensor(ros::NodeHandle* nodehandle):nh_(*nodehandle)  {
 // initialize publishers
 void piezo_sensor::initializePublishers()  {
     ROS_INFO("Initializing Publishers: piezo_sensor_publisher");
-    piezo_sensor_publisher = nh_.advertise<std_msgs::Float32>("piezo_sensor", 1, true);
+    piezo_sensor_publisher = nh_.advertise<tsn_bbb_msgs::Voltage>("piezo_sensor", 1, true);
 }
 
 // function to fetch and publish ADC values for certain pin
@@ -67,6 +67,8 @@ void piezo_sensor::fetchValues() {
 
     raw_data = analog_inputs::adcRead(file);  // read this data and store it in our local var raw_data
 
+    data_out.header.stamp = ros::Time::now();  // time stamp the measurement
+    
     data_out.data = 1.8*(raw_data/4096);  // convert this data to the proper format
 
     piezo_sensor_publisher.publish(data_out);  // publish this data in our desired msg type (std_msgs::Float32)

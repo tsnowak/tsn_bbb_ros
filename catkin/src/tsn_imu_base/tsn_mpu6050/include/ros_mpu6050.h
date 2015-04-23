@@ -30,7 +30,7 @@
 // message type used to communicate IMU data
 #include <sensor_msgs/Imu.h>
 // message type used to communicate GPIO output
-#include <std_msgs/UInt8.h>
+#include <tsn_bbb_msgs/GPIOOut.h>
 
 const double UPDATE_RATE = 50; // desired publication rate of IMU data
 const double limg = 1000;  // used to convert rotational accel to deg/s
@@ -53,7 +53,7 @@ private:
 	ros::Publisher imu_publisher;
 	ros::Publisher gpio_publisher;
 	sensor_msgs::Imu data_out;  // variable name for our sensor_msgs::Imu output
-	std_msgs::UInt8 gpio_data_out;  // variable name for our gpio output
+	tsn_bbb_msgs::GPIOOut gpio_data_out;  // variable name for our gpio output
 	int16_t ax, ay, az, gx, gy, gz;  // temp variables to store data from imu.getMotion6(...)
 
 };
