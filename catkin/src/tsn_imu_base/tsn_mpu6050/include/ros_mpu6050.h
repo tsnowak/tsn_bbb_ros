@@ -35,7 +35,7 @@
 const double UPDATE_RATE = 50; // desired publication rate of IMU data
 const double limg = 1000;  // used to convert rotational accel to deg/s
 const double lima = 2*9.8;  // used to convert linear accel to m/s^2
-const unsigned int GPIO = 45;   // Pin 11, pg. 84 BBB SRM: GPIO1_13 = (1x32) + 13 = 45
+const unsigned int GPIO = 30;   // Pin 11, pg. 84 BBB SRM: GPIO1_13 = (1x32) + 13 = 45
 
 class ros_mpu6050  {
 public:

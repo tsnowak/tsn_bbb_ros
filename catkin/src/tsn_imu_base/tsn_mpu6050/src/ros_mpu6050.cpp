@@ -50,8 +50,8 @@ ros_mpu6050::ros_mpu6050(ros::NodeHandle* nodehandle):nh_(*nodehandle)  {
     // Using GPIO to rise whenever we fetch I2C information
 
     ROS_INFO("Exporting and setting direction of GPIO.");
-    ROS_INFO("Exporting...");
-    gpio_export(GPIO);  // Exporting our GPIO pin
+    // ROS_INFO("Exporting...");
+    // gpio_export(GPIO);  // Exporting our GPIO pin
     ROS_INFO("Setting Direction...");
     gpio_set_dir(GPIO, OUTPUT_PIN);  // Setting GPIO pin as output
     ROS_INFO("Setting Low...");
