@@ -27,10 +27,10 @@ add_executable(piezo_sensor src/piezo_sensor.cpp)
 # add_library(tsn_mpu6050
 #   src/${PROJECT_NAME}/tsn_mpu6050.cpp
 # )
-#add_library(analog_inputs src/analog_inputs.cpp)
+#add_library(Analoglib src/Analoglib.cpp)
 
 target_link_libraries(piezo_sensor ${catkin_LIBRARIES})
-target_link_libraries(piezo_sensor analog_inputs)
+target_link_libraries(piezo_sensor Analoglib)
 
 #cs_install()
 #cs_export()

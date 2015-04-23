@@ -27,10 +27,10 @@ add_executable(ir_sensor src/ir_sensor.cpp)
 # add_library(tsn_mpu6050
 #   src/${PROJECT_NAME}/tsn_mpu6050.cpp
 # )
-#add_library(analog_inputs src/analog_inputs.cpp)
+#add_library(Analoglib src/Analoglib.cpp)
 
 target_link_libraries(ir_sensor ${catkin_LIBRARIES})
-target_link_libraries(ir_sensor analog_inputs)
+target_link_libraries(ir_sensor Analoglib)
 
 #cs_install()
 #cs_export()

@@ -15,7 +15,7 @@
 
 // ALWAYS need to include this when using ROS
 #include <ros/ros.h> 
-#include "analog_inputs.h"
+#include "Analoglib.h"
 // some generically useful stuff to include...
 #include <math.h>
 // #include <stdlib.h>

@@ -25,13 +25,13 @@ include_directories(include
 #   src/${PROJECT_NAME}/tsn_mpu6050.cpp
 # )
 add_library(I2Cdev src/I2Cdev.cpp)
-add_library(analog_inputs src/analog_inputs.cpp)
+add_library(Analoglib src/Analoglib.cpp)
 add_library(MPU6050 src/MPU6050.cpp)
 add_library(GPIOlib src/GPIOlib.cpp)
 
 
 #target_link_libraries(ir_sensor ${catkin_LIBRARIES})
-#target_link_libraries(ir_sensor analog_inputs)
+#target_link_libraries(ir_sensor Analoglib)
 
 #cs_install()
 #cs_export()

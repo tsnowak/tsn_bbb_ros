@@ -15,7 +15,7 @@
 
 // ALWAYS need to include this when using ROS
 #include <ros/ros.h> 
-#include "analog_inputs.h"
+#include "Analoglib.h"
 // some generically useful stuff to include...
 #include <math.h>
 // #include <stdlib.h>
@@ -35,7 +35,7 @@ class ir_sensor  {
 	private:
 		ros::NodeHandle nh_;
 		ros::Publisher ir_sensor_publisher;
-		tsn_bbb_msgs::Voltage data_out;  // variable name for our std_msgs::Float32 output
+		tsn_bbb_msgs::Voltage data_out;  // variable name for our tsn_bbb_msgs::float32 and timestamp output
 		float raw_data;  // variable we will store the raw 0-4096 data to
 		FILE* file;  // File where our data is held/to be read from
 };

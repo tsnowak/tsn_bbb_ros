@@ -1,5 +1,3 @@
-// GPIO.cpp Library Theodore Nowak 04/21/2015
-
 /*
  * SimpleGPIO.cpp
  *
@@ -35,6 +33,25 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
+
+/*
+ * Kudos and thanks to Derek Molloy and Ridgerun for nearly out
+ * out of the box operation. Very slight edits made to work properly
+ * on my BBB.
+ *
+ * Library to export, set, and read values from GPIO_30 (Pin 11) in
+ * ROS Indigo on a Beaglebone Black with Linux Arm OS (Kernel 3.8.x).
+
+ * Developer: Theodore Nowak BSc., Case Western Reserve University EECS Department
+ * Date of Initiation: 03/23/2015
+ *
+ * Functionality: Read and write to files on BBB in order to manipulate GPIO. Used to
+ * set direction as output, set value high and low, and read from written to file to verify
+ * functionality. These methods invoked in tsn_mpu6050.cpp.
+ *
+ * Application: Low cost gait tracking.
+ */
+
 
 #include "GPIOlib.h"
 #include <stdio.h>

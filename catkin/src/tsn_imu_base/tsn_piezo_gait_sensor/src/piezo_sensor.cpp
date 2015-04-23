@@ -36,10 +36,10 @@ piezo_sensor::piezo_sensor(ros::NodeHandle* nodehandle):nh_(*nodehandle)  {
 
     // ensure that our file exists and is working
     while (error && count < 5)  {
-        file = analog_inputs::openFile(pin);  // open our file for reading
+        file = Analoglib::openFile(pin);  // open our file for reading
 
         // try to read from it
-        if (analog_inputs::verifyADCPin(file))  {  
+        if (Analoglib::verifyADCPin(file))  {  
             ROS_INFO("Successfully read from file for Analog Pin %u!", pin);
             error = false;
         }
@@ -48,7 +48,7 @@ piezo_sensor::piezo_sensor(ros::NodeHandle* nodehandle):nh_(*nodehandle)  {
             ros::Duration(0.5).sleep();  // Don't eat up cpu, just take a short nap and try again
             count ++;
         }
-        analog_inputs::closeFile(file);  // always make sure to close the file after reading
+        Analoglib::closeFile(file);  // always make sure to close the file after reading
     }
     
 
@@ -63,9 +63,9 @@ void piezo_sensor::initializePublishers()  {
 
 // function to fetch and publish ADC values for certain pin
 void piezo_sensor::fetchValues() {
-    file = analog_inputs::openFile(pin);  // open the file with the ADC data for our pin inside
+    file = Analoglib::openFile(pin);  // open the file with the ADC data for our pin inside
 
-    raw_data = analog_inputs::adcRead(file);  // read this data and store it in our local var raw_data
+    raw_data = Analoglib::adcRead(file);  // read this data and store it in our local var raw_data
 
     data_out.header.stamp = ros::Time::now();  // time stamp the measurement
     
@@ -73,7 +73,7 @@ void piezo_sensor::fetchValues() {
 
     piezo_sensor_publisher.publish(data_out);  // publish this data in our desired msg type (std_msgs::Float32)
 
-    analog_inputs::closeFile(file);  // and per usual remember to close the file we read from
+    Analoglib::closeFile(file);  // and per usual remember to close the file we read from
 }
 
 int main (int argc, char** argv)  {
