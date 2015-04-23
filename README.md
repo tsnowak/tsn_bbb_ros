@@ -12,7 +12,7 @@ Developed by [Theodore Nowak](https://github.com/RACKGNOME)
 This code was initially developed as a senior project at Case Western Reserve University to satisfy requirements
 for BSc. candidates Alex Haufler and Theodore Nowak.
 
-#### Current ROS Dependencies
+#### Current Dependencies and Instructions
 The repository will be continuously updated as needed.  Please make sure your development system (and whatever robot you're trying to run our package on) has all of the dependencies listed below. Currently I have not written a setup file for this, but in the future I may. Manual steps are listed below.
 
 * Acquire Beaglebone Black!
