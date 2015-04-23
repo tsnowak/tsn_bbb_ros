@@ -49,4 +49,6 @@ The repository will be continuously updated as needed.  Please make sure your de
 
 * Run code
 
-*Each system is different so you may need to do some personal debugging. Figuring this out took me weeks to do. Hopefully this will help to minimize your install time to days, or even work perfectly for you. Cheers!
+#### End Remarks
+
+Each system is different so you may need to do some personal debugging. Figuring this out took me weeks to do. Hopefully this will help minimize your install time to days, if not hours, or minutes. Maybe if you invoke the base gods it might just work first time even! Cheers!
