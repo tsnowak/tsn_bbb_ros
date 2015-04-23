@@ -57,7 +57,7 @@ ros_mpu6050::ros_mpu6050(ros::NodeHandle* nodehandle):nh_(*nodehandle)  {
     ROS_INFO("Setting Low...");
     gpio_set_value(GPIO, LOW);  // Initialize GPIO at 0V
     ROS_INFO("Getting Value...");
-    gpio_get_value(GPIO, gpio_val);  // Verifying GPIO was set correctly
+    gpio_get_value(GPIO, &gpio_val);  // Verifying GPIO was set correctly
 
     if (gpio_val == 0)
         ROS_INFO("GPIO is set Low, success!");
