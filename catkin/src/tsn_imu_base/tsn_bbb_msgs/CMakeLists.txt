@@ -3,8 +3,8 @@ project(tsn_bbb_msgs)
 
 find_package(catkin REQUIRED COMPONENTS
   roscpp
-  message_generation
   std_msgs
+  message_generation
 )
 
 ## System dependencies are found with CMake's conventions
@@ -54,11 +54,7 @@ generate_messages(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES cwru_msgs
-#  CATKIN_DEPENDS actionlib actionlib_msgs geometry_msgs message_generation nav_msgs std_msgs trajectory_msgs
-#  DEPENDS system_lib
-  DEPENDS message_runtime
+  CATKIN_DEPENDS message_runtime
 )
 
 ###########
