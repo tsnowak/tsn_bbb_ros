@@ -45,7 +45,7 @@ The repository will be continuously updated as needed.  Please make sure your de
 
 * Change permissions of /sys/class/gpio/ folder via:
 	- /sys/class/gpio$ sudo chmod -R DESIRED_PERMISSION
-	- /sys/class/gpio/gpio#/ sudo chmod -R DESIRED_PERMISSION.
+	- /sys/class/gpio/gpio#/$ sudo chmod -R DESIRED_PERMISSION.
 
 * Run code
 
