@@ -34,7 +34,7 @@ add_executable(ros_mpu6050 src/ros_mpu6050.cpp)
 #add_library(I2Cdev src/I2Cdev.cpp)
 
 target_link_libraries(ros_mpu6050 ${catkin_LIBRARIES})
-target_link_libraries(ros_mpu6050 MPU6050 I2Cdev)
+target_link_libraries(ros_mpu6050 MPU6050 I2Cdev GPIOlib)
 
 #cs_install()
 #cs_export()

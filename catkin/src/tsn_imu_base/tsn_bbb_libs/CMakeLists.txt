@@ -27,6 +27,7 @@ include_directories(include
 add_library(I2Cdev src/I2Cdev.cpp)
 add_library(analog_inputs src/analog_inputs.cpp)
 add_library(MPU6050 src/MPU6050.cpp)
+add_library(GPIOlib src/GPIOlib.cpp)
 
 
 #target_link_libraries(ir_sensor ${catkin_LIBRARIES})

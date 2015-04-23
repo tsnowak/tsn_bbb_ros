@@ -20,6 +20,8 @@
 // Include our modified MPU6050 library (which references I2Cdev)
 #include "MPU6050.h"
 
+#include "GPIOlib.h"
+
 // some generically useful stuff to include...
 #include <math.h>
 #include <stdlib.h>
@@ -27,23 +29,31 @@
 
 // message type used to communicate IMU data
 #include <sensor_msgs/Imu.h>
+// message type used to communicate GPIO output
+#include <std_msgs/U_Int8.h>
 
 const double UPDATE_RATE = 50; // desired publication rate of IMU data
 const double limg = 1000;  // used to convert rotational accel to deg/s
 const double lima = 2*9.8;  // used to convert linear accel to m/s^2
+const unsigned int GPIO = 45;   // Pin 11, pg. 84 BBB SRM: GPIO1_13 = (1x32) + 13 = 45
 
 class ros_mpu6050  {
 public:
 	ros_mpu6050(ros::NodeHandle* nodehandle); // our main function needs to initialize a ROS node handler
 	void initializePublishers();
 	void fetchValues();
+	void setGPIOHigh();
+	void setGPIOLow();
 	
 	MPU6050 imu;  // instantiation of object of class MPU6050
+	unsigned int gpio_val;  // 0 = LOW, 1 = HIGH
 
 private:
 	ros::NodeHandle nh_;
 	ros::Publisher imu_publisher;
+	ros::Publisher gpio_publisher;
 	sensor_msgs::Imu data_out;  // variable name for our sensor_msgs::Imu output
+	std_msgs::U_Int8 gpio_data_out;  // variable name for our gpio output
 	int16_t ax, ay, az, gx, gy, gz;  // temp variables to store data from imu.getMotion6(...)
 
 };
