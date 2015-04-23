@@ -72,7 +72,7 @@ ros_mpu6050::ros_mpu6050(ros::NodeHandle* nodehandle):nh_(*nodehandle)  {
 void ros_mpu6050::initializePublishers()  {
     ROS_INFO("Initializing Publishers: imu_publisher, gpio_publisher");
     imu_publisher = nh_.advertise<sensor_msgs::Imu>("mpu_6050", 1, true); // publish IMU data in package sensor_msgs::Imu
-    gpio_publisher = nh_.advertise<std_msgs::U_Int8>("gpio_out", 1, true);  // publish current GPIO value
+    gpio_publisher = nh_.advertise<std_msgs::UInt8>("gpio_out", 1, true);  // publish current GPIO value
 }
 
 // retrieve IMU angular and linear accel values from IMU registers
