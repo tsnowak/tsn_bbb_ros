@@ -20,6 +20,9 @@ The repository will be continuously updated as needed.  Please make sure your de
 * Install Linux Arm OS via: 
 	- http://www.armhf.com/boards/beaglebone-black/#trusty
 
+* Install ROS Indigo via:
+	- http://wiki.ros.org/indigo/Installation/UbuntuARM
+
 * Ensure you are using Linux Arm Kernel 3.8.x. Install/Downgrade via:
 	- sudo apt-get update
 	- sudo apt-get install linux-image-3.8.13-bone68
@@ -50,6 +53,9 @@ The repository will be continuously updated as needed.  Please make sure your de
 	- /sys/class/gpio/gpio#/$ sudo chmod -R DESIRED_PERMISSION.
 
 * Run code
+
+* Note:
+	- Every time you power off the Beaglebone Black, you will have to re-do the permissions step of this process, and depending on your code, re-export your GPIO within the /sys/class/gpio/ directory
 
 #### End Remarks
 
