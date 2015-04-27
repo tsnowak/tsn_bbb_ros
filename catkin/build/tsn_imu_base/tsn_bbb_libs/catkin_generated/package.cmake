@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "tsn_bbb_libs")
+set(tsn_bbb_libs_MAINTAINER "ubuntu <ubuntu@todo.todo>")
+set(tsn_bbb_libs_DEPRECATED "")
+set(tsn_bbb_libs_VERSION "0.0.0")
+set(tsn_bbb_libs_BUILD_DEPENDS "roscpp" "std_msgs")
+set(tsn_bbb_libs_RUN_DEPENDS "roscpp" "std_msgs")
+set(tsn_bbb_libs_BUILDTOOL_DEPENDS "catkin")

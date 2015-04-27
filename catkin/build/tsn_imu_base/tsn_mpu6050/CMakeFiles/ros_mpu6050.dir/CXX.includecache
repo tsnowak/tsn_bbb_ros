@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+/home/ubuntu/ros_workspace/tsn_senior_project/catkin/src/tsn_imu_base/tsn_mpu6050/include/GPIOlib.h
+
 /home/ubuntu/ros_workspace/tsn_senior_project/catkin/src/tsn_imu_base/tsn_mpu6050/include/I2Cdev.h
 stdint.h
 -
@@ -19,6 +21,8 @@ ros/ros.h
 -
 MPU6050.h
 /home/ubuntu/ros_workspace/tsn_senior_project/catkin/src/tsn_imu_base/tsn_mpu6050/include/MPU6050.h
+GPIOlib.h
+/home/ubuntu/ros_workspace/tsn_senior_project/catkin/src/tsn_imu_base/tsn_mpu6050/include/GPIOlib.h
 math.h
 -
 stdlib.h
@@ -26,6 +30,8 @@ stdlib.h
 string
 -
 sensor_msgs/Imu.h
+-
+tsn_bbb_msgs/GPIOOut.h
 -
 
 /home/ubuntu/ros_workspace/tsn_senior_project/catkin/src/tsn_imu_base/tsn_mpu6050/src/ros_mpu6050.cpp

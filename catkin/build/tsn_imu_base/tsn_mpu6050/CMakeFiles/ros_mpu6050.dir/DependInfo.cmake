@@ -17,8 +17,9 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/tsn_imu_base/tsn_mpu6050/CMakeFiles/MPU6050.dir/DependInfo.cmake"
-  "/home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/tsn_imu_base/tsn_mpu6050/CMakeFiles/I2Cdev.dir/DependInfo.cmake"
+  "/home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/tsn_imu_base/tsn_bbb_libs/CMakeFiles/MPU6050.dir/DependInfo.cmake"
+  "/home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/tsn_imu_base/tsn_bbb_libs/CMakeFiles/I2Cdev.dir/DependInfo.cmake"
+  "/home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/tsn_imu_base/tsn_bbb_libs/CMakeFiles/GPIOlib.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

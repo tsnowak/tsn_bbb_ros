@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "tsn_bbb_msgs")
+set(tsn_bbb_msgs_MAINTAINER "ubuntu <tsn@todo.todo>")
+set(tsn_bbb_msgs_DEPRECATED "")
+set(tsn_bbb_msgs_VERSION "0.0.0")
+set(tsn_bbb_msgs_BUILD_DEPENDS "message_generation" "std_msgs")
+set(tsn_bbb_msgs_RUN_DEPENDS "message_runtime" "std_msgs")
+set(tsn_bbb_msgs_BUILDTOOL_DEPENDS "catkin")

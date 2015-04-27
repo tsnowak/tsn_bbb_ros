@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/ros_workspace/tsn_senior_project/catkin/src/tsn_imu_base/tsn_bbb_libs/include/GPIOlib.h
+
+/home/ubuntu/ros_workspace/tsn_senior_project/catkin/src/tsn_imu_base/tsn_bbb_libs/src/GPIOlib.cpp
+GPIOlib.h
+/home/ubuntu/ros_workspace/tsn_senior_project/catkin/src/tsn_imu_base/tsn_bbb_libs/src/GPIOlib.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+errno.h
+-
+unistd.h
+-
+fcntl.h
+-
+poll.h
+-
+

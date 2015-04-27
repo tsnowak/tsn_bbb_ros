@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/ros_workspace/tsn_senior_project/catkin/src/tsn_imu_base/tsn_bbb_libs/include/Analoglib.h
+stdint.h
+-
+string
+-
+stdint.h
+-
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+sys/ioctl.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+
+/home/ubuntu/ros_workspace/tsn_senior_project/catkin/src/tsn_imu_base/tsn_bbb_libs/src/Analoglib.cpp
+Analoglib.h
+-
+

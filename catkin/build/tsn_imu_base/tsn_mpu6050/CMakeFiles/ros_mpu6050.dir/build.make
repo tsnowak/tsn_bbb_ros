@@ -100,6 +100,7 @@ ros_mpu6050_EXTERNAL_OBJECTS =
 /home/ubuntu/ros_workspace/tsn_senior_project/catkin/devel/lib/tsn_mpu6050/ros_mpu6050: /usr/lib/arm-linux-gnueabihf/libconsole_bridge.so
 /home/ubuntu/ros_workspace/tsn_senior_project/catkin/devel/lib/tsn_mpu6050/ros_mpu6050: /home/ubuntu/ros_workspace/tsn_senior_project/catkin/devel/lib/libMPU6050.so
 /home/ubuntu/ros_workspace/tsn_senior_project/catkin/devel/lib/tsn_mpu6050/ros_mpu6050: /home/ubuntu/ros_workspace/tsn_senior_project/catkin/devel/lib/libI2Cdev.so
+/home/ubuntu/ros_workspace/tsn_senior_project/catkin/devel/lib/tsn_mpu6050/ros_mpu6050: /home/ubuntu/ros_workspace/tsn_senior_project/catkin/devel/lib/libGPIOlib.so
 /home/ubuntu/ros_workspace/tsn_senior_project/catkin/devel/lib/tsn_mpu6050/ros_mpu6050: tsn_imu_base/tsn_mpu6050/CMakeFiles/ros_mpu6050.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/ubuntu/ros_workspace/tsn_senior_project/catkin/devel/lib/tsn_mpu6050/ros_mpu6050"
 	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/tsn_imu_base/tsn_mpu6050 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ros_mpu6050.dir/link.txt --verbose=$(VERBOSE)

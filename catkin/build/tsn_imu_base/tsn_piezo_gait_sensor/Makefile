@@ -149,6 +149,44 @@ depend:
 	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+tsn_imu_base/tsn_piezo_gait_sensor/CMakeFiles/piezo_sensor.dir/rule:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_piezo_gait_sensor/CMakeFiles/piezo_sensor.dir/rule
+.PHONY : tsn_imu_base/tsn_piezo_gait_sensor/CMakeFiles/piezo_sensor.dir/rule
+
+# Convenience name for target.
+piezo_sensor: tsn_imu_base/tsn_piezo_gait_sensor/CMakeFiles/piezo_sensor.dir/rule
+.PHONY : piezo_sensor
+
+# fast build rule for target.
+piezo_sensor/fast:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_piezo_gait_sensor/CMakeFiles/piezo_sensor.dir/build.make tsn_imu_base/tsn_piezo_gait_sensor/CMakeFiles/piezo_sensor.dir/build
+.PHONY : piezo_sensor/fast
+
+src/piezo_sensor.o: src/piezo_sensor.cpp.o
+.PHONY : src/piezo_sensor.o
+
+# target to build an object file
+src/piezo_sensor.cpp.o:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_piezo_gait_sensor/CMakeFiles/piezo_sensor.dir/build.make tsn_imu_base/tsn_piezo_gait_sensor/CMakeFiles/piezo_sensor.dir/src/piezo_sensor.cpp.o
+.PHONY : src/piezo_sensor.cpp.o
+
+src/piezo_sensor.i: src/piezo_sensor.cpp.i
+.PHONY : src/piezo_sensor.i
+
+# target to preprocess a source file
+src/piezo_sensor.cpp.i:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_piezo_gait_sensor/CMakeFiles/piezo_sensor.dir/build.make tsn_imu_base/tsn_piezo_gait_sensor/CMakeFiles/piezo_sensor.dir/src/piezo_sensor.cpp.i
+.PHONY : src/piezo_sensor.cpp.i
+
+src/piezo_sensor.s: src/piezo_sensor.cpp.s
+.PHONY : src/piezo_sensor.s
+
+# target to generate assembly for a file
+src/piezo_sensor.cpp.s:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_piezo_gait_sensor/CMakeFiles/piezo_sensor.dir/build.make tsn_imu_base/tsn_piezo_gait_sensor/CMakeFiles/piezo_sensor.dir/src/piezo_sensor.cpp.s
+.PHONY : src/piezo_sensor.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -160,8 +198,12 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... piezo_sensor"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... src/piezo_sensor.o"
+	@echo "... src/piezo_sensor.i"
+	@echo "... src/piezo_sensor.s"
 .PHONY : help
 
 

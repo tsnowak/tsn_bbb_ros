@@ -150,130 +150,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/ir_sensor.dir/rule:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/ir_sensor.dir/rule
+.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/ir_sensor.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_cpp: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : roscpp_generate_messages_cpp
+ir_sensor: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/ir_sensor.dir/rule
+.PHONY : ir_sensor
 
 # fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
+ir_sensor/fast:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/ir_sensor.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/ir_sensor.dir/build
+.PHONY : ir_sensor/fast
 
-# Convenience name for target.
-tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+src/ir_sensor.o: src/ir_sensor.cpp.o
+.PHONY : src/ir_sensor.o
 
-# Convenience name for target.
-roscpp_generate_messages_lisp: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : roscpp_generate_messages_lisp
+# target to build an object file
+src/ir_sensor.cpp.o:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/ir_sensor.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/ir_sensor.dir/src/ir_sensor.cpp.o
+.PHONY : src/ir_sensor.cpp.o
 
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
+src/ir_sensor.i: src/ir_sensor.cpp.i
+.PHONY : src/ir_sensor.i
 
-# Convenience name for target.
-tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/rule
+# target to preprocess a source file
+src/ir_sensor.cpp.i:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/ir_sensor.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/ir_sensor.dir/src/ir_sensor.cpp.i
+.PHONY : src/ir_sensor.cpp.i
 
-# Convenience name for target.
-roscpp_generate_messages_py: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : roscpp_generate_messages_py
+src/ir_sensor.s: src/ir_sensor.cpp.s
+.PHONY : src/ir_sensor.s
 
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f CMakeFiles/Makefile2 tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
+# target to generate assembly for a file
+src/ir_sensor.cpp.s:
+	cd /home/ubuntu/ros_workspace/tsn_senior_project/catkin/build && $(MAKE) -f tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/ir_sensor.dir/build.make tsn_imu_base/tsn_ir_gait_sensor/CMakeFiles/ir_sensor.dir/src/ir_sensor.cpp.s
+.PHONY : src/ir_sensor.cpp.s
 
 # Help Target
 help:
@@ -285,18 +197,13 @@ help:
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
+	@echo "... ir_sensor"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
+	@echo "... src/ir_sensor.o"
+	@echo "... src/ir_sensor.i"
+	@echo "... src/ir_sensor.s"
 .PHONY : help
 
 

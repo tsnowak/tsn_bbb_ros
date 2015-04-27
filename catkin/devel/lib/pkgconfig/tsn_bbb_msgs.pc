@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/ros_workspace/tsn_senior_project/catkin/devel
+
+Name: tsn_bbb_msgs
+Description: Description of tsn_bbb_msgs
+Version: 0.0.0
+Cflags: -I/home/ubuntu/ros_workspace/tsn_senior_project/catkin/devel/include
+Libs: -L/home/ubuntu/ros_workspace/tsn_senior_project/catkin/devel/lib 
+Requires: message_runtime

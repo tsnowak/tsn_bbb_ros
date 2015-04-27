@@ -47,3 +47,18 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tsn_piezo_gait_sensor" TYPE FILE FILES "/home/ubuntu/ros_workspace/tsn_senior_project/catkin/src/tsn_imu_base/tsn_piezo_gait_sensor/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/tsn_imu_base/tsn_piezo_gait_sensor/catkin_generated/installspace/tsn_piezo_gait_sensor.pc")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tsn_piezo_gait_sensor/cmake" TYPE FILE FILES
+    "/home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/tsn_imu_base/tsn_piezo_gait_sensor/catkin_generated/installspace/tsn_piezo_gait_sensorConfig.cmake"
+    "/home/ubuntu/ros_workspace/tsn_senior_project/catkin/build/tsn_imu_base/tsn_piezo_gait_sensor/catkin_generated/installspace/tsn_piezo_gait_sensorConfig-version.cmake"
+    )
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tsn_piezo_gait_sensor" TYPE FILE FILES "/home/ubuntu/ros_workspace/tsn_senior_project/catkin/src/tsn_imu_base/tsn_piezo_gait_sensor/package.xml")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+
